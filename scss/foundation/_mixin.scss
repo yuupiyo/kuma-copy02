@@ -1,0 +1,57 @@
+@use "sass:math";
+
+//メディアクエリの設定
+//ブレイクポイント
+$sp:     375px;
+$tablet: 768px;
+$pc:     1120px;
+
+//タブレットサイズ以上しかスタイリングしない時に使う
+@mixin sp {
+  @media screen and (width >= $sp) {
+    @content;
+  }
+}
+
+//タブレットサイズ以上しかスタイリングしない時に使う
+@mixin tablet {
+  @media screen and (width >= $tablet) {
+    @content;
+  }
+}
+
+//pcサイズのみしかスタイリングしない時に使う
+@mixin pc {
+  @media screen and (width >= $pc) {
+    @content;
+  }
+}
+
+//pxをremに変換する関数
+$root-size: 16; //htmlに設定してあるfont-size
+
+@function rem($px) {
+  @return math.div($px, $root-size) * 1rem;
+}
+
+//pxをvwに変換する関数
+//スマホver.
+$sp-viewport: 375; //デザインカンプの画面幅
+
+@function sp-vw($num, $width:$sp-viewport) {
+  @return(1vw * $num/$width * 100);
+}
+
+//タブレットver.
+$tb-viewport: 768; //デザインカンプの画面幅
+
+@function tb-vw($num, $width:$tb-viewport) {
+  @return(1vw * $num/$width * 100);
+}
+
+//パソコンver.
+$pc-viewport: 1280; //デザインカンプの画面幅
+
+@function pc-vw($num, $width:$pc-viewport) {
+  @return(1vw * $num/$width * 100);
+}
