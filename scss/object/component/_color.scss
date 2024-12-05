@@ -1,0 +1,9 @@
+@use "../../foundation/global" as g;
+
+// 文字etc色関係(bodyの基本色は#000です。)
+.c-color__red {
+  color: g.$color-red;
+}
+.c-color__white {
+  color: g.$color-white;
+}
