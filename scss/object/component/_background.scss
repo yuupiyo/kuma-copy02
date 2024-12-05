@@ -1,0 +1,16 @@
+@use "../../foundation/global" as g;
+
+//  背景に関するスタイリング
+// 背景色
+.c-background-color__black {
+  background: g.$color-black;
+}
+.c-background-color__white {
+  background: g.$color-white;
+}
+.c-background-color__gray01 {
+  background: g.$color-gray01;
+}
+.c-background-color__gray01 {
+  background: g.$color-gray02;
+}
