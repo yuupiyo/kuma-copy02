@@ -1,16 +1,26 @@
 @use "../../foundation/global" as g;
 
-.c-font {
+// font関係のスタイリング
+// Noto Serif JP
+.c-font__serif {
   font-family: "Noto Serif JP", serif;
   font-optical-sizing: auto;
   font-weight: normal;
   font-style: normal;
 }
-.c-font__bold {
-  @extend .c-font;
+.c-font__serif--bold {
+  @extend .c-font__serif;
   font-weight: bold;
 }
-.c-font__italic {
-  @extend .c-font;
+.c-font__serif--italic {
+  @extend .c-font__serif;
   font-style: italic;
+}
+
+// Noto Sans JP
+.c-font__sans {
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
 }
