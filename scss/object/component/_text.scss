@@ -1,0 +1,12 @@
+@use "../../foundation/global" as g;
+
+// 文章関係
+// 縦書き
+.c-text__tate {
+  writing-mode: vertical-rl;
+}
+
+// 右斜め上
+.c-text__naname {
+  transform: rotate(-10deg);
+}

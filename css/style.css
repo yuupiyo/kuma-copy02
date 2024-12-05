@@ -66,4 +66,12 @@ img {
   font-weight: 900;
   font-style: normal;
 }
+
+.c-text__tate {
+  writing-mode: vertical-rl;
+}
+
+.c-text__naname {
+  transform: rotate(-10deg);
+}
 /*# sourceMappingURL=style.css.map */
