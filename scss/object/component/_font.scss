@@ -1,0 +1,16 @@
+@use "../../foundation/global" as g;
+
+.c-font {
+  font-family: "Noto Serif JP", serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+.c-font__bold {
+  @extend .c-font;
+  font-weight: bold;
+}
+.c-font__italic {
+  @extend .c-font;
+  font-style: italic;
+}
