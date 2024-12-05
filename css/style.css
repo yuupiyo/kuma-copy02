@@ -16,7 +16,14 @@ img {
   display: block;
 }
 
+.l-wrapper {
+  background: url(/img/common/bg.webp) center repeat-y;
+}
+
 /*---------------------
 foundation
+----------------------*/
+/*---------------------
+layout
 ----------------------*/
 /*# sourceMappingURL=style.css.map */
