@@ -21,6 +21,20 @@ img {
   background: url(/img/common/bg.webp) center repeat-y;
 }
 
+.c-arrow {
+  position: relative;
+}
+.c-arrow::before {
+  position: absolute;
+  left: 8em;
+  top: 50%;
+  transform: translateY(-50%) skewX(45deg);
+  height: 0.4em;
+  width: 1em;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
 .c-background-color__black {
   background: #000;
 }

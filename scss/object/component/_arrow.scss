@@ -1,0 +1,16 @@
+@use "../../foundation/global" as g;
+
+// 右矢印
+.c-arrow {
+  position: relative;
+  &::before {
+    position: absolute;
+    left: 8em;
+    top: 50%;
+    transform: translateY(-50%) skewX(45deg);
+    height: .4em;
+    width: 1em;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+  }
+}
