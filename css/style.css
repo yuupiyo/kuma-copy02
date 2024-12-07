@@ -17,6 +17,13 @@ img {
   display: block;
 }
 
+.l-footer {
+  margin-top: 6.25rem;
+  padding: 3.75rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
 .l-wrapper {
   background: url(/img/common/bg.webp) center repeat-y;
 }

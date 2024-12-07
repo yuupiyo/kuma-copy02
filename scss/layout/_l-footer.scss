@@ -1,0 +1,8 @@
+@use "../foundation/global" as g;
+
+.l-footer {
+  margin-top: g.rem(100);
+  padding: g.rem(60) 0;
+  position: relative;
+  overflow: hidden;
+}
