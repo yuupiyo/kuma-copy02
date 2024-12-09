@@ -2,37 +2,54 @@
 
 .p-pagetop {
   display: inline-block;
-  padding-bottom: g.rem(150);
+  padding-bottom: 18vw;
   position: relative;
-  left: 50%;
   bottom: 0;
-  font-size: g.rem(14);
+  left: auto;
+  right: -84vw;
+  font-size: 3vw;
   letter-spacing: .04em;
   line-height: 1.8;
-  transform: translateX(-50%) translateY(20px);
+  transform: translateX(0) translateY(0);
   transition: transform .3s ease, color .3s ease;
   z-index: 10;
+  @include g.tablet { // ウィンドウ幅769px以上
+    padding-bottom: g.rem(150);
+    left: 50%;
+    right: 0;
+    font-size: g.rem(14);
+    transform: translateX(-50%) translateY(g.rem(20));
+  }
+
   &::before {
     content: '';
     position: absolute;
     left: 50%;
     bottom: 0;
-    height: g.rem(130);
     width: g.rem(1);
+    height: 15vw;    
     background: g.$color-black;
     transform: translateX(-50%);
     transition: background-color .3s ease;
+    @include g.tablet {
+      height: g.rem(130);
+    }
   }
   &::after {
     content: '';
     position: absolute;
     left: 50%;
-    bottom: g.rem(130);
-    width: g.rem(20);
-    height: g.rem(20);
+    bottom: 15vw;
+    width: 3vw;
+    height: 3vw;
     transform: translate(-50%, 110%) rotate(-45deg);
     border-top: g.rem(1) solid g.$color-black;
     border-right: g.rem(1) solid g.$color-black;
+    @include g.tablet {
+      bottom: g.rem(130);
+      width: g.rem(20);
+      height: g.rem(20);
+    }
   }
 }
 
