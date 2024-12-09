@@ -95,4 +95,37 @@ img {
 .c-text__naname {
   transform: rotate(-10deg);
 }
+
+.p-pagetop {
+  display: inline-block;
+  padding-bottom: 9.375rem;
+  position: relative;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%) translateY(20px);
+  transition: transform 0.3s ease, color 0.3s ease;
+  z-index: 10;
+}
+.p-pagetop::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  height: 8.125rem;
+  width: 0.0625rem;
+  background: #000;
+  transform: translateX(-50%);
+  transition: background-color 0.3s ease;
+}
+.p-pagetop::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 8.125rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  transform: translate(-50%, 110%) rotate(-45deg);
+  border-top: 0.0625rem solid #000;
+  border-right: 0.0625rem solid #000;
+}
 /*# sourceMappingURL=style.css.map */
