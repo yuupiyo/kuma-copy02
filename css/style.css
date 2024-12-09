@@ -102,6 +102,9 @@ img {
   position: relative;
   left: 50%;
   bottom: 0;
+  font-size: 0.875rem;
+  letter-spacing: 0.04em;
+  line-height: 1.8;
   transform: translateX(-50%) translateY(20px);
   transition: transform 0.3s ease, color 0.3s ease;
   z-index: 10;
@@ -127,5 +130,19 @@ img {
   transform: translate(-50%, 110%) rotate(-45deg);
   border-top: 0.0625rem solid #000;
   border-right: 0.0625rem solid #000;
+}
+
+@media (any-hover: hover) {
+  .p-pagetop:hover {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+    color: #f00;
+  }
+  .p-pagetop:hover::before {
+    background: #f00;
+  }
+  .p-pagetop:hover::after {
+    border-color: #f00;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -6,6 +6,9 @@
   position: relative;
   left: 50%;
   bottom: 0;
+  font-size: g.rem(14);
+  letter-spacing: .04em;
+  line-height: 1.8;
   transform: translateX(-50%) translateY(20px);
   transition: transform .3s ease, color .3s ease;
   z-index: 10;
@@ -30,5 +33,20 @@
     transform: translate(-50%, 110%) rotate(-45deg);
     border-top: g.rem(1) solid g.$color-black;
     border-right: g.rem(1) solid g.$color-black;
+  }
+}
+
+// hover時
+@media (any-hover: hover) {
+  .p-pagetop:hover {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+    color: g.$color-red;
+  }
+  .p-pagetop:hover::before {
+    background: g.$color-red;
+  }
+  .p-pagetop:hover::after {
+    border-color: g.$color-red;
   }
 }
