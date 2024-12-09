@@ -20,6 +20,7 @@
 @use "./object/component/arrow";
 @use "./object/component/background";
 @use "./object/component/color";
+@use "./object/component/flex";
 @use "./object/component/font";
 @use "./object/component/inner";
 @use "./object/component/text";
@@ -27,4 +28,10 @@
 // ---------------------
 // project
 // ----------------------
+@use "./object/project/footer";
 @use "./object/project/pagetop";
+
+// ---------------------
+// utility
+// ----------------------
+@use "./object/utility/align-items";

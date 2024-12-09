@@ -1,0 +1,8 @@
+@use "../../foundation/global" as g;
+
+.u-align-items__flex-end--pc-only {
+  align-items: flex-start;
+  @include g.tablet {
+    align-items: flex-end;
+  }
+}

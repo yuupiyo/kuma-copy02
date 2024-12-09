@@ -1,0 +1,16 @@
+@use "../../foundation/global" as g;
+
+.c-flex__sp-column {
+  display: flex;
+  flex-direction: column;
+  @include g.tablet {
+    flex-direction: row;
+  }
+}
+.c-flex__sp-column--space-between {
+  @extend .c-flex__sp-column;
+  @include g.tablet {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

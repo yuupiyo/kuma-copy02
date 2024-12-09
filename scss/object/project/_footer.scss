@@ -1,0 +1,15 @@
+@use "../../foundation/global" as g;
+
+.p-footer__logo {
+  display: inline-block;
+  margin-bottom: 5vw;
+  @include g.tablet {
+    margin-bottom: 1em;
+  }
+}
+.p-footer__address {
+  font-size: 2.5vw;
+  @include g.tablet {
+    font-size: g.rem(14);
+  }
+}
