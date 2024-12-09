@@ -88,6 +88,12 @@ img {
   font-style: normal;
 }
 
+.c-inner {
+  max-width: 1200px;
+  width: 90%;
+  margin-inline: auto;
+}
+
 .c-text__tate {
   writing-mode: vertical-rl;
 }
