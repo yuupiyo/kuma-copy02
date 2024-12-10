@@ -1,0 +1,8 @@
+@use "../../foundation/global" as g;
+
+.u-justify-content__flex-end--pconly {
+  justify-content: flex-start;
+  @include g.tablet {
+    justify-content: flex-end;
+  }
+}

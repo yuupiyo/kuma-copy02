@@ -13,10 +13,36 @@
     font-size: g.rem(14);
   }
 }
-
+.p-footer__sns {
+  margin-bottom: 8vw;
+  @include g.tablet {
+    margin-bottom: g.rem(20);
+  }
+  & a {
+    transition: opacity 0.3s ease;
+  }
+  & li {
+    width: 7vw;
+    margin-left: .5em;
+    @include g.tablet {
+      width: auto;
+      margin-left: 1em;
+    }
+  }
+  & img {
+    height: 100%;
+  }
+}
 .p-footer__copyright {
   font-size: g.tb-vw(19.2);
   @include g.tablet {
     font-size: g.rem(14);
+  }
+}
+
+// hover時
+@media (any-hover: hover) {
+  .p-footer__sns a:hover {
+    opacity: .6;
   }
 }

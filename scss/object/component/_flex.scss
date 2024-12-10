@@ -1,5 +1,8 @@
 @use "../../foundation/global" as g;
 
+.c-flex {
+  display: flex;
+}
 .c-flex__sp-column {
   display: flex;
   flex-direction: column;
