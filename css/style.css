@@ -130,7 +130,7 @@ img {
 }
 @media screen and (width >= 769px) {
   .p-footer__logo {
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
   }
 }
 
@@ -180,7 +180,8 @@ img {
 }
 
 @media (any-hover: hover) {
-  .p-footer__sns a:hover {
+  .p-footer__sns a:hover,
+.p-footer__logo:hover {
     opacity: 0.6;
   }
 }

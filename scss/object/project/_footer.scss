@@ -4,7 +4,7 @@
   display: inline-block;
   margin-bottom: 5vw;
   @include g.tablet {
-    margin-bottom: 1em;
+    margin-bottom: .5em;
   }
 }
 .p-footer__address {
@@ -44,7 +44,8 @@
 
 // hover時
 @media (any-hover: hover) {
-  .p-footer__sns a:hover {
+  .p-footer__sns a:hover,
+  .p-footer__logo:hover {
     opacity: .6;
   }
 }
