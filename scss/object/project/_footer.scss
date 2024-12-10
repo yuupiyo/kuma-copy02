@@ -13,3 +13,10 @@
     font-size: g.rem(14);
   }
 }
+
+.p-footer__copyright {
+  font-size: g.tb-vw(19.2);
+  @include g.tablet {
+    font-size: g.rem(14);
+  }
+}

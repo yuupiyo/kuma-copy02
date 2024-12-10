@@ -139,6 +139,15 @@ img {
   }
 }
 
+.p-footer__copyright {
+  font-size: 2.5vw;
+}
+@media screen and (width >= 769px) {
+  .p-footer__copyright {
+    font-size: 0.875rem;
+  }
+}
+
 .p-pagetop {
   display: inline-block;
   position: absolute;
