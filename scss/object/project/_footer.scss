@@ -8,11 +8,29 @@
   }
 }
 .p-footer__address {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 3vw;
   font-size: 2.5vw;
   @include g.tablet {
+    display: block;
     margin-bottom: 0;
     font-size: g.rem(14);
+  }
+  & span {
+    display: inline-block;
+  }
+  & span:first-child {
+    margin-right: 0;
+    @include g.tablet {
+      margin-right: 1em;
+    }
+  }
+  & span:nth-child(2) {
+    order: 3;
+    @include g.tablet {
+      order: unset;
+    }
   }
 }
 .p-footer__sns {

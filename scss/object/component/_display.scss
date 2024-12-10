@@ -1,0 +1,8 @@
+@use "../../foundation/global" as g;
+
+.c-display__pconly {
+  display: none;
+  @include g.tablet {
+    display: block;
+  }
+}
