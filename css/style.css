@@ -82,6 +82,7 @@ img {
 @media (any-hover: hover) {
   .c-banner:hover, .c-banner__recruit:hover, .c-banner__contact:hover {
     background-color: #f00;
+    opacity: 1;
   }
 }
 .c-border-radius__15 {
@@ -196,6 +197,24 @@ img {
   left: 3.125rem;
 }
 
+.p-bannerlist__title {
+  display: inline-block;
+  padding: 0 1em;
+  background: #000;
+  color: #fff;
+  transform: skew(-10deg) rotate(-10deg);
+  font-size: 2.375rem;
+  letter-spacing: 0.2em;
+  line-height: 1.4;
+  margin-bottom: 0.8em;
+  transition: color 0.3s ease;
+}
+
+@media (any-hover: hover) {
+  .p-bannerlist a:hover .p-bannerlist__title {
+    color: #f00;
+  }
+}
 .p-footer__logo {
   display: inline-block;
   margin-bottom: 5vw;

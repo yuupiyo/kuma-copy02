@@ -13,6 +13,8 @@
 .p-bannerlist__contact {
   padding-right: 30%;
 }
+
+// バナー内縦書きキャッチコピー
 .p-bannerlist__catch {
   position: absolute;
   top: g.rem(50);
@@ -25,5 +27,26 @@
   &--contact {
     @extend .p-bannerlist__catch;
     left: g.rem(50);
+  }
+}
+
+// タイトル
+.p-bannerlist__title {
+  display: inline-block;
+  padding: 0 1em;
+  background: g.$color-black;
+  color: g.$color-white;
+  transform: skew(-10deg) rotate(-10deg);
+  font-size: g.rem(38);
+  letter-spacing: .2em;
+  line-height: 1.4;
+  margin-bottom: .8em;
+  transition: color .3s ease;
+}
+
+// hover時
+@media (any-hover: hover) {
+  .p-bannerlist a:hover .p-bannerlist__title {
+    color: g.$color-red;
   }
 }
