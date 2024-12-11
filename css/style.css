@@ -210,9 +210,32 @@ img {
   transition: color 0.3s ease;
 }
 
+.p-bannerlist__text {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 0.2em;
+  font-size: 1.125rem;
+  border-bottom: 0.0625rem solid #000;
+}
+.p-bannerlist__text::before {
+  content: "";
+  position: absolute;
+  bottom: -3.75rem;
+  left: 50%;
+  width: 1.875rem;
+  height: 0.625rem;
+  transform: translateX(-60%) skew(45deg);
+  border-right: 0.0625rem solid #000;
+  border-bottom: 0.0625rem solid #000;
+  transition: width 0.3s ease;
+}
+
 @media (any-hover: hover) {
   .p-bannerlist a:hover .p-bannerlist__title {
     color: #f00;
+  }
+  .p-bannerlist a:hover .p-bannerlist__text::before {
+    width: 3.125rem;
   }
 }
 .p-footer__logo {

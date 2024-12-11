@@ -44,9 +44,34 @@
   transition: color .3s ease;
 }
 
+// タイトル下部テキスト
+.p-bannerlist__text {
+  display: inline-block;
+  position: relative;
+  padding-bottom: .2em;
+  font-size: g.rem(18);
+  border-bottom: g.rem(1) solid g.$color-black;
+  // 矢印部分（hover時動きがあるのでここで制作）
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: g.rem(-60);
+    left: 50%;
+    width: g.rem(30);
+    height: g.rem(10);
+    transform: translateX(-60%) skew(45deg);
+    border-right: g.rem(1) solid g.$color-black;
+    border-bottom: g.rem(1) solid g.$color-black;
+    transition: width .3s ease;
+  }
+}
+
 // hover時
 @media (any-hover: hover) {
   .p-bannerlist a:hover .p-bannerlist__title {
     color: g.$color-red;
+  }
+  .p-bannerlist a:hover .p-bannerlist__text::before {
+    width: g.rem(50);
   }
 }
