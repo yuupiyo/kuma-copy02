@@ -7,9 +7,23 @@
   position: relative;
   margin: g.rem(60) 0;
 }
-.p-bannerlist a {
+.p-bannerlist__recruit {
   padding-left: 30%;
-  &:nth-child(even) {
-    padding-right: 30%;
+}
+.p-bannerlist__contact {
+  padding-right: 30%;
+}
+.p-bannerlist__catch {
+  position: absolute;
+  top: g.rem(50);
+  font-size: g.rem(14);
+  pointer-events: none;
+  &--recruit {
+    @extend .p-bannerlist__catch;
+    right: g.rem(50);
+  }
+  &--contact {
+    @extend .p-bannerlist__catch;
+    left: g.rem(50);
   }
 }

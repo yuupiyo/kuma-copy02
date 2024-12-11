@@ -66,13 +66,17 @@ img {
   padding-bottom: 1.875rem;
   height: 21.4375rem;
   background-color: #efefef;
+  background-repeat: no-repeat;
+  background-size: contain;
   transition: background-color 0.3s ease;
 }
 .c-banner__recruit {
-  background: url(../../../img/common/footer_bnr01@2x.webp) no-repeat left center/contain;
+  background-image: url(../../../img/common/footer_bnr01@2x.webp);
+  background-position: left center;
 }
 .c-banner__contact {
-  background: url(../../../img/common/footer_bnr02@2x.webp) no-repeat right center/contain;
+  background-image: url(../../../img/common/footer_bnr02@2x.webp);
+  background-position: right center;
 }
 
 @media (any-hover: hover) {
@@ -171,11 +175,25 @@ img {
   margin: 3.75rem 0;
 }
 
-.p-bannerlist a {
+.p-bannerlist__recruit {
   padding-left: 30%;
 }
-.p-bannerlist a:nth-child(even) {
+
+.p-bannerlist__contact {
   padding-right: 30%;
+}
+
+.p-bannerlist__catch, .p-bannerlist__catch--contact, .p-bannerlist__catch--recruit {
+  position: absolute;
+  top: 3.125rem;
+  font-size: 0.875rem;
+  pointer-events: none;
+}
+.p-bannerlist__catch--recruit {
+  right: 3.125rem;
+}
+.p-bannerlist__catch--contact {
+  left: 3.125rem;
 }
 
 .p-footer__logo {
