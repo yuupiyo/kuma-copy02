@@ -63,20 +63,38 @@ img {
   display: grid;
   place-content: center;
   place-items: center;
-  padding-bottom: 1.875rem;
-  height: 21.4375rem;
+  padding-bottom: 2vw;
+  height: 50vw;
   background-color: #efefef;
   background-repeat: no-repeat;
   background-size: contain;
+  border-radius: 0;
   transition: background-color 0.3s ease;
 }
+@media screen and (width >= 769px) {
+  .c-banner, .c-banner__contact, .c-banner__recruit {
+    padding-bottom: 1.875rem;
+    height: 21.4375rem;
+    border-radius: 0.9375rem;
+  }
+}
 .c-banner__recruit {
-  background-image: url(../../../img/common/footer_bnr01@2x.webp);
+  background-image: url(../../../img/common/footer_bnr01_sp@2x.webp);
   background-position: left center;
 }
+@media screen and (width >= 769px) {
+  .c-banner__recruit {
+    background-image: url(../../../img/common/footer_bnr01@2x.webp);
+  }
+}
 .c-banner__contact {
-  background-image: url(../../../img/common/footer_bnr02@2x.webp);
+  background-image: url(../../../img/common/footer_bnr02_sp@2x.webp);
   background-position: right center;
+}
+@media screen and (width >= 769px) {
+  .c-banner__contact {
+    background-image: url(../../../img/common/footer_bnr02@2x.webp);
+  }
 }
 
 @media (any-hover: hover) {
@@ -156,11 +174,26 @@ img {
 }
 
 .c-inner__max970 {
-  max-width: 970px;
+  width: 100%;
+}
+@media screen and (width >= 769px) {
+  .c-inner__max970 {
+    max-width: 970px;
+    width: 90%;
+  }
 }
 
 .c-text__tate {
   writing-mode: vertical-rl;
+}
+
+.c-text__tate--pconly {
+  writing-mode: inherit;
+}
+@media screen and (width >= 769px) {
+  .c-text__tate--pconly {
+    writing-mode: vertical-rl;
+  }
 }
 
 .c-text__naname {
@@ -168,27 +201,57 @@ img {
 }
 
 .p-bannerlist {
-  margin-top: 9.375rem;
+  margin-top: 10.0260416667vw;
+}
+@media screen and (width >= 769px) {
+  .p-bannerlist {
+    margin-top: 9.375rem;
+  }
 }
 
 .p-bannerlist li {
   position: relative;
-  margin: 3.75rem 0;
+  margin: 2.9947916667vw 0;
+}
+@media screen and (width >= 769px) {
+  .p-bannerlist li {
+    margin: 3.75rem 0;
+  }
 }
 
 .p-bannerlist__recruit {
-  padding-left: 30%;
+  padding-left: 39.9993489583vw;
+}
+@media screen and (width >= 769px) {
+  .p-bannerlist__recruit {
+    padding-left: 30%;
+  }
 }
 
 .p-bannerlist__contact {
-  padding-right: 30%;
+  padding-right: 39.9993489583vw;
+}
+@media screen and (width >= 769px) {
+  .p-bannerlist__contact {
+    padding-right: 30%;
+  }
 }
 
 .p-bannerlist__catch, .p-bannerlist__catch--contact, .p-bannerlist__catch--recruit {
-  position: absolute;
-  top: 3.125rem;
-  font-size: 0.875rem;
+  position: static;
+  margin-bottom: 2em;
+  font-size: 2.4739583333vw;
+  text-align: center;
   pointer-events: none;
+}
+@media screen and (width >= 769px) {
+  .p-bannerlist__catch, .p-bannerlist__catch--contact, .p-bannerlist__catch--recruit {
+    position: absolute;
+    top: 3.125rem;
+    margin-bottom: 0;
+    font-size: 0.875rem;
+    text-align: left;
+  }
 }
 .p-bannerlist__catch--recruit {
   right: 3.125rem;
@@ -203,37 +266,59 @@ img {
   background: #000;
   color: #fff;
   transform: skew(-10deg) rotate(-10deg);
-  font-size: 2.375rem;
+  font-size: 4.5572916667vw;
   letter-spacing: 0.2em;
   line-height: 1.4;
   margin-bottom: 0.8em;
   transition: color 0.3s ease;
+}
+@media screen and (width >= 769px) {
+  .p-bannerlist__title {
+    font-size: 2.375rem;
+  }
 }
 
 .p-bannerlist__text {
   display: inline-block;
   position: relative;
   padding-bottom: 0.2em;
-  font-size: 1.125rem;
+  font-size: 2.9947916667vw;
   border-bottom: 0.0625rem solid #000;
+}
+@media screen and (width >= 769px) {
+  .p-bannerlist__text {
+    font-size: 1.125rem;
+  }
 }
 .p-bannerlist__text::before {
   content: "";
   position: absolute;
-  bottom: -3.75rem;
+  bottom: -4.9479166667vw;
   left: 50%;
-  width: 1.875rem;
-  height: 0.625rem;
+  width: 3.90625vw;
+  height: 1.3020833333vw;
   transform: translateX(-60%) skew(45deg);
   border-right: 0.0625rem solid #000;
   border-bottom: 0.0625rem solid #000;
   transition: width 0.3s ease;
+}
+@media screen and (width >= 769px) {
+  .p-bannerlist__text::before {
+    bottom: -3.75rem;
+    width: 1.875rem;
+    height: 0.625rem;
+  }
 }
 
 @media (any-hover: hover) {
   .p-bannerlist a:hover .p-bannerlist__title {
     color: #f00;
   }
+  .p-bannerlist a:hover .p-bannerlist__text::before {
+    width: 5.859375vw;
+  }
+}
+@media screen and (any-hover: hover) and (width >= 769px) {
   .p-bannerlist a:hover .p-bannerlist__text::before {
     width: 3.125rem;
   }

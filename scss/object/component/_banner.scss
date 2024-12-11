@@ -4,21 +4,33 @@
   display: grid;
   place-content: center;
   place-items: center;
-  padding-bottom: g.rem(30);
-  height: g.rem(343);
+  padding-bottom: g.tb-vw(15.36);
+  height: g.tb-vw(384);
   background-color: g.$color-gray01;
   background-repeat: no-repeat;
   background-size: contain;
+  border-radius: 0;
   transition: background-color .3s ease;
+  @include g.tablet {
+    padding-bottom: g.rem(30);
+    height: g.rem(343);
+    border-radius: g.rem(15);
+  }
   &__recruit {
     @extend .c-banner;
-    background-image: url(../../../img/common/footer_bnr01@2x.webp);
+    background-image: url(../../../img/common/footer_bnr01_sp@2x.webp);
     background-position: left center;
+    @include g.tablet {
+      background-image: url(../../../img/common/footer_bnr01@2x.webp);
+    }
   }
   &__contact {
     @extend .c-banner;
-    background-image: url(../../../img/common/footer_bnr02@2x.webp);
+    background-image: url(../../../img/common/footer_bnr02_sp@2x.webp);
     background-position: right center;
+    @include g.tablet {
+      background-image: url(../../../img/common/footer_bnr02@2x.webp);
+    }
   }
 }
 

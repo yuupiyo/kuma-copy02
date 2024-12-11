@@ -1,25 +1,45 @@
 @use "../../foundation/global" as g;
 
 .p-bannerlist {
-  margin-top: g.rem(150);
+  margin-top: g.tb-vw(77);
+  @include g.tablet {
+    margin-top: g.rem(150);
+  }
 }
 .p-bannerlist li {
   position: relative;
-  margin: g.rem(60) 0;
+  margin: g.tb-vw(23) 0;
+  @include g.tablet {
+    margin: g.rem(60) 0;
+  }
 }
 .p-bannerlist__recruit {
-  padding-left: 30%;
+  padding-left: g.tb-vw(307.195);
+  @include g.tablet {
+    padding-left: 30%;
+  }
 }
 .p-bannerlist__contact {
-  padding-right: 30%;
+  padding-right: g.tb-vw(307.195);
+  @include g.tablet {
+    padding-right: 30%;
+  }
 }
 
 // バナー内縦書きキャッチコピー
 .p-bannerlist__catch {
-  position: absolute;
-  top: g.rem(50);
-  font-size: g.rem(14);
+  position: static;
+  margin-bottom: 2em;
+  font-size: g.tb-vw(19);
+  text-align: center;
   pointer-events: none;
+  @include g.tablet {
+    position: absolute;
+    top: g.rem(50);
+    margin-bottom: 0;
+    font-size: g.rem(14);
+    text-align: left
+  }
   &--recruit {
     @extend .p-bannerlist__catch;
     right: g.rem(50);
@@ -37,11 +57,14 @@
   background: g.$color-black;
   color: g.$color-white;
   transform: skew(-10deg) rotate(-10deg);
-  font-size: g.rem(38);
+  font-size: g.tb-vw(35);
   letter-spacing: .2em;
   line-height: 1.4;
   margin-bottom: .8em;
   transition: color .3s ease;
+  @include g.tablet {
+    font-size: g.rem(38);
+  }
 }
 
 // タイトル下部テキスト
@@ -49,20 +72,29 @@
   display: inline-block;
   position: relative;
   padding-bottom: .2em;
-  font-size: g.rem(18);
+  font-size: g.tb-vw(23);
   border-bottom: g.rem(1) solid g.$color-black;
+  @include g.tablet {
+    font-size: g.rem(18);
+  }
+
   // 矢印部分（hover時動きがあるのでここで制作）
   &::before {
     content: '';
     position: absolute;
-    bottom: g.rem(-60);
+    bottom: g.tb-vw(-38);
     left: 50%;
-    width: g.rem(30);
-    height: g.rem(10);
+    width: g.tb-vw(30);
+    height: g.tb-vw(10);
     transform: translateX(-60%) skew(45deg);
     border-right: g.rem(1) solid g.$color-black;
     border-bottom: g.rem(1) solid g.$color-black;
     transition: width .3s ease;
+    @include g.tablet {
+      bottom: g.rem(-60);
+      width: g.rem(30);
+      height: g.rem(10);
+    }
   }
 }
 
@@ -72,6 +104,9 @@
     color: g.$color-red;
   }
   .p-bannerlist a:hover .p-bannerlist__text::before {
-    width: g.rem(50);
+    width: g.tb-vw(45);
+    @include g.tablet {
+      width: g.rem(50);
+    }
   }
 }

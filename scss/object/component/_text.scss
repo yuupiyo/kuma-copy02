@@ -5,6 +5,12 @@
 .c-text__tate {
   writing-mode: vertical-rl;
 }
+.c-text__tate--pconly {
+  writing-mode: inherit;
+  @include g.tablet {
+    writing-mode: vertical-rl;
+  }
+}
 
 // 右斜め上
 .c-text__naname {

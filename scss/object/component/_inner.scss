@@ -7,5 +7,9 @@
 }
 .c-inner__max970 {
   @extend .c-inner;
-  max-width: 970px;
+  width: 100%;
+  @include g.tablet {
+    max-width: 970px;
+    width: 90%;
+  }
 }
