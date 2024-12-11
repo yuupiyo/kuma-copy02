@@ -171,10 +171,9 @@ img {
   margin: 3.75rem 0;
 }
 
-.p-bannerlist a:nth-child(odd) {
+.p-bannerlist a {
   padding-left: 30%;
 }
-
 .p-bannerlist a:nth-child(even) {
   padding-right: 30%;
 }

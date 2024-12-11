@@ -7,9 +7,9 @@
   position: relative;
   margin: g.rem(60) 0;
 }
-.p-bannerlist a:nth-child(odd) {
+.p-bannerlist a {
   padding-left: 30%;
-}
-.p-bannerlist a:nth-child(even) {
-  padding-right: 30%;
+  &:nth-child(even) {
+    padding-right: 30%;
+  }
 }
