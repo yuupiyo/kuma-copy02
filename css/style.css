@@ -65,17 +65,21 @@ img {
   place-items: center;
   padding-bottom: 1.875rem;
   height: 21.4375rem;
+  background-color: #efefef;
   transition: background-color 0.3s ease;
 }
 .c-banner__recruit {
-  background: #efefef url(../../../img/common/footer_bnr01@2x.webp) no-repeat left center/contain;
-  padding-left: 30%;
+  background: url(../../../img/common/footer_bnr01@2x.webp) no-repeat left center/contain;
 }
 .c-banner__contact {
-  background: #efefef url(../../../img/common/footer_bnr02@2x.webp) no-repeat right center/contain;
-  padding-right: 30%;
+  background: url(../../../img/common/footer_bnr02@2x.webp) no-repeat right center/contain;
 }
 
+@media (any-hover: hover) {
+  .c-banner:hover, .c-banner__recruit:hover, .c-banner__contact:hover {
+    background-color: #f00;
+  }
+}
 .c-border-radius__15 {
   border-radius: 0.9375rem;
 }
@@ -156,6 +160,23 @@ img {
 
 .c-text__naname {
   transform: rotate(-10deg);
+}
+
+.p-bannerlist {
+  margin-top: 9.375rem;
+}
+
+.p-bannerlist li {
+  position: relative;
+  margin: 3.75rem 0;
+}
+
+.p-bannerlist a:nth-child(odd) {
+  padding-left: 30%;
+}
+
+.p-bannerlist a:nth-child(even) {
+  padding-right: 30%;
 }
 
 .p-footer__logo {

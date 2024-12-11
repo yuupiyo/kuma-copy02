@@ -1,1 +1,15 @@
 @use "../../foundation/global" as g;
+
+.p-bannerlist {
+  margin-top: g.rem(150);
+}
+.p-bannerlist li {
+  position: relative;
+  margin: g.rem(60) 0;
+}
+.p-bannerlist a:nth-child(odd) {
+  padding-left: 30%;
+}
+.p-bannerlist a:nth-child(even) {
+  padding-right: 30%;
+}
