@@ -1,0 +1,20 @@
+@use "../../foundation/global" as g;
+
+.c-banner {
+  display: grid;
+  place-content: center;
+  place-items: center;
+  padding-bottom: g.rem(30);
+  height: g.rem(343);
+  transition: background-color .3s ease;
+  &__recruit {
+    @extend .c-banner;
+    background: #efefef url(../../../img/common/footer_bnr01@2x.webp) no-repeat left center / contain;
+    padding-left: 30%;  
+  }
+  &__contact {
+    @extend .c-banner;
+    background: #efefef url(../../../img/common/footer_bnr02@2x.webp) no-repeat right center / contain;
+    padding-right: 30%;
+  }
+}

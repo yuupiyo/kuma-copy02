@@ -5,3 +5,7 @@
   width: 90%;
   margin-inline: auto;
 }
+.c-inner__max970 {
+  @extend .c-inner;
+  max-width: 970px;
+}

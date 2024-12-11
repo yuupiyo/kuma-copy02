@@ -59,6 +59,27 @@ img {
   background: #bbb;
 }
 
+.c-banner, .c-banner__contact, .c-banner__recruit {
+  display: grid;
+  place-content: center;
+  place-items: center;
+  padding-bottom: 1.875rem;
+  height: 21.4375rem;
+  transition: background-color 0.3s ease;
+}
+.c-banner__recruit {
+  background: #efefef url(../../../img/common/footer_bnr01@2x.webp) no-repeat left center/contain;
+  padding-left: 30%;
+}
+.c-banner__contact {
+  background: #efefef url(../../../img/common/footer_bnr02@2x.webp) no-repeat right center/contain;
+  padding-right: 30%;
+}
+
+.c-border-radius__15 {
+  border-radius: 0.9375rem;
+}
+
 .c-color__red {
   color: #f00;
 }
@@ -119,10 +140,14 @@ img {
   font-style: normal;
 }
 
-.c-inner {
+.c-inner, .c-inner__max970 {
   max-width: 1200px;
   width: 90%;
   margin-inline: auto;
+}
+
+.c-inner__max970 {
+  max-width: 970px;
 }
 
 .c-text__tate {

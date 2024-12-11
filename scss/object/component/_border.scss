@@ -1,0 +1,7 @@
+@use "../../foundation/global" as g;
+
+.c-border-radius {
+  &__15 {
+    border-radius: g.rem(15);
+  }
+}
