@@ -55,7 +55,7 @@ img {
   background: #efefef;
 }
 
-.c-background-color__gray01 {
+.c-background-color__gray02 {
   background: #bbb;
 }
 
@@ -172,7 +172,7 @@ img {
   font-style: normal;
 }
 
-.c-inner, .c-inner__max970 {
+.c-inner, .c-inner__max1100, .c-inner__max970 {
   max-width: 1200px;
   width: 90%;
   margin-inline: auto;
@@ -186,6 +186,10 @@ img {
     max-width: 970px;
     width: 90%;
   }
+}
+
+.c-inner__max1100 {
+  max-width: 1100px;
 }
 
 .c-text__tate {
