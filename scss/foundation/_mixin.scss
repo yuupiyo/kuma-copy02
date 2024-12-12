@@ -4,9 +4,10 @@
 //ブレイクポイント
 $sp:     375px;
 $tablet: 769px;
-$pc:     971px;
+$l-tablet: 971px;
+$pc:     1200px;
 
-//タブレットサイズ以上しかスタイリングしない時に使う
+//スマホサイズしかスタイリングしない時に使う
 @mixin sp {
   @media screen and (width >= $sp) {
     @content;
@@ -16,6 +17,13 @@ $pc:     971px;
 //タブレットサイズ以上しかスタイリングしない時に使う
 @mixin tablet {
   @media screen and (width >= $tablet) {
+    @content;
+  }
+}
+
+//画面幅が広めのタブレットサイズ以上しかスタイリングしない時に使う
+@mixin l-tablet {
+  @media screen and (width >= $l-tablet) {
     @content;
   }
 }
@@ -44,13 +52,17 @@ $sp-viewport: 375; //デザインカンプの画面幅
 
 //タブレットver.
 $tb-viewport: 768; //デザインカンプの画面幅
+$l-tb-viewport: 970;
 
 @function tb-vw($num, $width:$tb-viewport) {
   @return(1vw * $num/$width * 100);
 }
+@function l-tb-vw($num, $width:$tb-viewport) {
+  @return(1vw * $num/$width * 100);
+}
 
 //パソコンver.
-$pc-viewport: 970; //デザインカンプの画面幅
+$pc-viewport: 1200; //デザインカンプの画面幅
 
 @function pc-vw($num, $width:$pc-viewport) {
   @return(1vw * $num/$width * 100);
