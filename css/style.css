@@ -524,6 +524,16 @@ img {
     border-color: #f00;
   }
 }
+.p-performance {
+  position: relative;
+  margin-top: 35%;
+}
+@media screen and (width >= 769px) {
+  .p-performance {
+    margin-top: 16.25rem;
+  }
+}
+
 .p-performance__list {
   padding: 2.9947916667vw 0;
 }

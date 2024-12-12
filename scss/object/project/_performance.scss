@@ -1,5 +1,13 @@
 @use "../../foundation/global" as g;
 
+.p-performance {
+  position: relative;
+  margin-top: 35%;
+  @include g.tablet {
+    margin-top: g.rem(260);
+  }
+}
+
 .p-performance__list {
   padding: g.tb-vw(23) 0;
   @include g.tablet {
