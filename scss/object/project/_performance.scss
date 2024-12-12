@@ -1,1 +1,45 @@
 @use "../../foundation/global" as g;
+
+.p-performance__list {
+  padding: g.rem(20) 0;
+}
+
+.p-performance__listitem {
+  flex: 1;
+  position: relative;
+  margin: g.rem(3);
+  padding: g.rem(300) 0 g.rem(60);
+  text-align: center;
+}
+
+// リスト内タイトル
+.p-performance__listtitle {
+  position: absolute;
+  top: g.rem(60);
+  left: 50%;
+  margin-left: -.8em;
+  font-size: g.rem(20);
+  text-align: left;
+  & span {
+    display: block;
+    font-size: g.rem(10);
+  }
+}
+
+// リスト内実績件数
+.p-performance__case {
+  font-size: g.rem(11);
+  & span {
+    font-size: g.rem(18);
+  }
+}
+
+// リスト内ページ数実績数
+.p-performance__page {
+  font-size: g.rem(11);
+  line-height: 1.2;
+  & span {
+    display: block;
+    font-size: g.rem(26);
+  }
+}

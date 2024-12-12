@@ -524,6 +524,47 @@ img {
     border-color: #f00;
   }
 }
+.p-performance__list {
+  padding: 1.25rem 0;
+}
+
+.p-performance__listitem {
+  flex: 1;
+  position: relative;
+  margin: 0.1875rem;
+  padding: 18.75rem 0 3.75rem;
+  text-align: center;
+}
+
+.p-performance__listtitle {
+  position: absolute;
+  top: 3.75rem;
+  left: 50%;
+  margin-left: -0.8em;
+  font-size: 1.25rem;
+  text-align: left;
+}
+.p-performance__listtitle span {
+  display: block;
+  font-size: 0.625rem;
+}
+
+.p-performance__case {
+  font-size: 0.6875rem;
+}
+.p-performance__case span {
+  font-size: 1.125rem;
+}
+
+.p-performance__page {
+  font-size: 0.6875rem;
+  line-height: 1.2;
+}
+.p-performance__page span {
+  display: block;
+  font-size: 1.625rem;
+}
+
 .u-align-items__flex-end--pc-only {
   align-items: flex-start;
 }
