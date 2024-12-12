@@ -35,18 +35,28 @@
   pointer-events: none;
   @include g.tablet {
     position: absolute;
-    top: g.rem(50);
+    top: g.l-tb-vw(23);
     margin-bottom: 0;
-    font-size: g.rem(14);
+    font-size: g.l-tb-vw(12);
     text-align: left
+  }
+  @include g.l-tablet {
+    top: g.rem(50);
+    font-size: g.rem(14);
   }
   &--recruit {
     @extend .p-bannerlist__catch;
-    right: g.rem(50);
+    right: g.l-tb-vw(23);
+    @include g.l-tablet {
+      right: g.rem(50);
+    }
   }
   &--contact {
     @extend .p-bannerlist__catch;
-    left: g.rem(50);
+    left: g.l-tb-vw(23);
+    @include g.l-tablet {
+      left: g.rem(50);
+    }
   }
 }
 
@@ -63,6 +73,9 @@
   margin-bottom: .8em;
   transition: color .3s ease;
   @include g.tablet {
+    font-size: g.l-tb-vw(27);
+  }
+  @include g.l-tablet {
     font-size: g.rem(38);
   }
 }
@@ -75,6 +88,9 @@
   font-size: g.tb-vw(23);
   border-bottom: g.rem(1) solid g.$color-black;
   @include g.tablet {
+    font-size: g.l-tb-vw(16);
+  }
+  @include g.l-tablet {
     font-size: g.rem(18);
   }
 

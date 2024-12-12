@@ -13,8 +13,11 @@
   transition: background-color .3s ease;
   @include g.tablet {
     padding-bottom: g.rem(30);
-    height: g.rem(343);
+    height: g.l-tb-vw(230.695);
     border-radius: g.rem(15);
+  }
+  @include g.l-tablet {
+    height: g.rem(343);
   }
   &__recruit {
     @extend .c-banner;

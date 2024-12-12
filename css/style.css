@@ -74,8 +74,13 @@ img {
 @media screen and (width >= 769px) {
   .c-banner, .c-banner__contact, .c-banner__recruit {
     padding-bottom: 1.875rem;
-    height: 21.4375rem;
+    height: 30.0384114583vw;
     border-radius: 0.9375rem;
+  }
+}
+@media screen and (width >= 971px) {
+  .c-banner, .c-banner__contact, .c-banner__recruit {
+    height: 21.4375rem;
   }
 }
 .c-banner__recruit {
@@ -247,17 +252,33 @@ img {
 @media screen and (width >= 769px) {
   .p-bannerlist__catch, .p-bannerlist__catch--contact, .p-bannerlist__catch--recruit {
     position: absolute;
-    top: 3.125rem;
+    top: 2.9947916667vw;
     margin-bottom: 0;
-    font-size: 0.875rem;
+    font-size: 1.5625vw;
     text-align: left;
   }
 }
+@media screen and (width >= 971px) {
+  .p-bannerlist__catch, .p-bannerlist__catch--contact, .p-bannerlist__catch--recruit {
+    top: 3.125rem;
+    font-size: 0.875rem;
+  }
+}
 .p-bannerlist__catch--recruit {
-  right: 3.125rem;
+  right: 2.9947916667vw;
+}
+@media screen and (width >= 971px) {
+  .p-bannerlist__catch--recruit {
+    right: 3.125rem;
+  }
 }
 .p-bannerlist__catch--contact {
-  left: 3.125rem;
+  left: 2.9947916667vw;
+}
+@media screen and (width >= 971px) {
+  .p-bannerlist__catch--contact {
+    left: 3.125rem;
+  }
 }
 
 .p-bannerlist__title {
@@ -274,6 +295,11 @@ img {
 }
 @media screen and (width >= 769px) {
   .p-bannerlist__title {
+    font-size: 3.515625vw;
+  }
+}
+@media screen and (width >= 971px) {
+  .p-bannerlist__title {
     font-size: 2.375rem;
   }
 }
@@ -286,6 +312,11 @@ img {
   border-bottom: 0.0625rem solid #000;
 }
 @media screen and (width >= 769px) {
+  .p-bannerlist__text {
+    font-size: 2.0833333333vw;
+  }
+}
+@media screen and (width >= 971px) {
   .p-bannerlist__text {
     font-size: 1.125rem;
   }
