@@ -5,7 +5,7 @@
 $sp:     375px;
 $tablet: 769px;
 $l-tablet: 971px;
-$pc:     1200px;
+$pc:     1101px;
 
 //スマホサイズしかスタイリングしない時に使う
 @mixin sp {
@@ -62,7 +62,7 @@ $l-tb-viewport: 970;
 }
 
 //パソコンver.
-$pc-viewport: 1200; //デザインカンプの画面幅
+$pc-viewport: 1100; //デザインカンプの画面幅
 
 @function pc-vw($num, $width:$pc-viewport) {
   @return(1vw * $num/$width * 100);

@@ -1,45 +1,101 @@
 @use "../../foundation/global" as g;
 
 .p-performance__list {
-  padding: g.rem(20) 0;
+  padding: g.tb-vw(23) 0;
+  @include g.tablet {
+    padding: g.rem(20) 0;
+  }
 }
 
 .p-performance__listitem {
-  flex: 1;
+  display: flex;
+  align-items: center;
   position: relative;
-  margin: g.rem(3);
-  padding: g.rem(300) 0 g.rem(60);
-  text-align: center;
+  margin: g.tb-vw(7.68) 0;
+  padding: g.tb-vw(23) g.tb-vw(38.4);
+  text-align: left;
+  border-radius: g.rem(6);
+  @include g.tablet {
+    display: block;
+    flex: 1;
+    margin: g.rem(3);
+    padding: g.rem(300) 0 g.rem(60);
+    text-align: center;
+    border-radius: g.rem(15);
+  }
 }
 
 // リスト内タイトル
 .p-performance__listtitle {
-  position: absolute;
+  display: flex;
+  flex-flow: column;
+  flex-grow: 1;
+  position: static;
   top: g.rem(60);
   left: 50%;
-  margin-left: -.8em;
-  font-size: g.rem(20);
+  margin-left: 0;
+  font-size: g.tb-vw(30);
+  font-weight: bold;
+  line-height: 1.4;
   text-align: left;
+  @include g.tablet {
+    display: block;
+    position: absolute;
+    margin-left: -.8em;
+    font-size: g.rem(20);
+    font-weight: normal;
+    line-height: 1.8;
+  }
   & span {
     display: block;
-    font-size: g.rem(10);
+    order: 2;
+    font-size: g.tb-vw(16);
+    @include g.tablet {
+      order: unset;
+      font-size: g.rem(10);
+    }
   }
 }
 
 // リスト内実績件数
 .p-performance__case {
-  font-size: g.rem(11);
+  padding-right: 1em;
+  font-size: g.tb-vw(23);
+  font-weight: bold;
+  @include g.tablet {
+    padding-right: 0;
+    font-size: g.rem(11);
+    font-weight: normal;
+  }
   & span {
-    font-size: g.rem(18);
+    font-size: g.tb-vw(27);
+    @include g.tablet {
+      font-size: g.rem(16);
+    }
+    @include g.pc {
+      font-size: g.rem(18);
+    }
   }
 }
 
 // リスト内ページ数実績数
 .p-performance__page {
-  font-size: g.rem(11);
+  font-size: g.tb-vw(23);
+  font-weight: bold;
   line-height: 1.2;
+  @include g.tablet {
+    font-size: g.rem(11);
+    font-weight: normal;
+  }
   & span {
-    display: block;
-    font-size: g.rem(26);
+    display: inline-block;
+    font-size: g.tb-vw(30);
+    @include g.tablet {
+      display: block;
+      font-size: g.rem(22);
+    }
+    @include g.pc {
+      font-size: g.rem(26);
+    }
   }
 }
