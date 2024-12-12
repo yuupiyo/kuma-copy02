@@ -4,7 +4,7 @@
 //ブレイクポイント
 $sp:     375px;
 $tablet: 769px;
-$pc:     1120px;
+$pc:     971px;
 
 //タブレットサイズ以上しかスタイリングしない時に使う
 @mixin sp {
@@ -50,7 +50,7 @@ $tb-viewport: 768; //デザインカンプの画面幅
 }
 
 //パソコンver.
-$pc-viewport: 1280; //デザインカンプの画面幅
+$pc-viewport: 970; //デザインカンプの画面幅
 
 @function pc-vw($num, $width:$pc-viewport) {
   @return(1vw * $num/$width * 100);
