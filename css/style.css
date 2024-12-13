@@ -209,6 +209,15 @@ img {
   transform: rotate(-10deg);
 }
 
+.c-title__background {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.c-title__text {
+  vertical-align: text-bottom;
+}
+
 .p-bannerlist {
   margin-top: 10.0260416667vw;
 }

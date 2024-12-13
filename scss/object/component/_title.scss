@@ -1,1 +1,12 @@
 @use "../../foundation/global" as g;
+
+.c-title {
+  &__background {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  &__text {
+    vertical-align: text-bottom;
+  }
+}
