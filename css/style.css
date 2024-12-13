@@ -172,10 +172,19 @@ img {
   font-style: normal;
 }
 
-.c-inner, .c-inner__max1100, .c-inner__max970 {
+.c-inner, .c-inner__max1100, .c-inner__max970, .c-inner__point {
   max-width: 1200px;
   width: 90%;
   margin-inline: auto;
+}
+
+.c-inner__point {
+  width: 39.9993489583vw;
+}
+@media screen and (width >= 769px) {
+  .c-inner__point {
+    width: 90%;
+  }
 }
 
 .c-inner__max970 {
@@ -693,6 +702,45 @@ img {
   .p-performance__page span {
     font-size: 1.625rem;
   }
+}
+
+.p-point {
+  position: relative;
+  padding-top: 3.125rem;
+}
+
+.p-point__image {
+  background: url(../../../img/yabai/yabai_img01@2x.webp) no-repeat center/cover;
+  height: 94.99921875vw;
+}
+@media screen and (width >= 769px) {
+  .p-point__image {
+    height: auto;
+  }
+}
+
+.p-point__titlearea {
+  position: absolute;
+  top: 0;
+  right: 50%;
+  transform: translateX(50%);
+  margin: auto auto;
+}
+
+.p-point__title-bg {
+  margin: 0 0.9375rem;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  letter-spacing: 0.34em;
+  transition: max-height 0.5s ease;
+}
+
+.p-point__title-text, .p-point__title-text--big {
+  margin-top: 0.625rem;
+  transition: opacity 0.5s ease;
+}
+.p-point__title-text--big {
+  font-size: 200%;
 }
 
 .u-align-items__flex-end--pc-only {

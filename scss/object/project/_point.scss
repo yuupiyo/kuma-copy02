@@ -1,1 +1,40 @@
 @use "../../foundation/global" as g;
+
+.p-point {
+  position: relative;
+  padding-top: g.rem(50);
+}
+
+// イメージ画像
+.p-point__image {
+  background: url(../../../img/yabai/yabai_img01@2x.webp) no-repeat center / cover;
+  height: g.tb-vw(729.594);
+  @include g.tablet {
+    background: none;
+    height: auto;
+  }
+}
+
+// タイトル
+.p-point__titlearea {
+  position: absolute;
+  top: 0;
+  right: 50%;
+  transform: translateX(50%);
+  margin: auto auto;
+}
+.p-point__title-bg {
+  margin: 0 g.rem(15);
+  font-size: g.rem(40);
+  line-height: 1.2;
+  letter-spacing: .34em;
+  transition: max-height .5s ease;
+}
+.p-point__title-text {
+  margin-top: g.rem(10);
+  transition: opacity .5s ease;
+  &--big {
+    @extend .p-point__title-text;
+    font-size: 200%;
+  }
+}

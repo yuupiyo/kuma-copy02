@@ -5,6 +5,13 @@
   width: 90%;
   margin-inline: auto;
 }
+.c-inner__point {
+  @extend .c-inner;
+  width: g.tb-vw(307.195);
+  @include g.tablet {
+    width: 90%;
+  }
+}
 .c-inner__max970 {
   @extend .c-inner;
   width: 100%;
