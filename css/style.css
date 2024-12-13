@@ -545,11 +545,24 @@ img {
 
 .p-performance__title {
   position: absolute;
-  top: -6.875rem;
-  right: 50%;
-  transform: translateX(50%);
-  padding-left: 3.125rem;
+  top: -16vw;
+  left: 0;
   z-index: 10;
+}
+@media screen and (width >= 769px) {
+  .p-performance__title {
+    top: -5.625rem;
+    left: unset;
+    right: 50%;
+    transform: translateX(50%);
+    padding-left: 1.875rem;
+  }
+}
+@media screen and (width >= 1101px) {
+  .p-performance__title {
+    top: -6.875rem;
+    padding-left: 3.125rem;
+  }
 }
 
 .p-performance__title-bg {

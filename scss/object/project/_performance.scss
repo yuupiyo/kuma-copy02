@@ -11,11 +11,20 @@
 // タイトル
 .p-performance__title {
   position: absolute;
-  top: g.rem(-110);
-  right: 50%;
-  transform: translateX(50%);
-  padding-left: g.rem(50);
+  top: g.tb-vw(-122.88);
+  left: 0; 
   z-index: 10;
+  @include g.tablet {
+    top: g.rem(-90);
+    left: unset;
+    right: 50%;
+    transform: translateX(50%);
+    padding-left: g.rem(30);
+  }
+  @include g.pc {
+    top: g.rem(-110);
+    padding-left: g.rem(50);
+  }
 }
 .p-performance__title-bg {
   margin: g.rem(5) 0;
