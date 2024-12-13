@@ -8,6 +8,28 @@
   }
 }
 
+// タイトル
+.p-performance__title {
+  position: absolute;
+  top: g.rem(-110);
+  right: 50%;
+  transform: translateX(50%);
+  padding-left: g.rem(50);
+  z-index: 10;
+}
+.p-performance__title-bg {
+  margin: g.rem(5) 0;
+  font-size: g.rem(30);
+  line-height: 1.8;
+  letter-spacing: .34em;
+  transition: max-width .5s ease;
+}
+.p-performance__title-text {
+  margin-left: .5em;
+  transition: opacity .5s ease;
+}
+
+
 .p-performance__list {
   padding: g.tb-vw(23) 0;
   @include g.tablet {
