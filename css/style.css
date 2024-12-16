@@ -715,6 +715,7 @@ img {
 }
 @media screen and (width >= 769px) {
   .p-point__image {
+    background: none;
     height: auto;
   }
 }
