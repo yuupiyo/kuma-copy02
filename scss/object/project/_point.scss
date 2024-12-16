@@ -45,15 +45,25 @@
 }
 
 .p-point__list-item01 {
-  position: absolute;
-  top: g.rem(-150);
-  right: 0;
-  width: g.rem(512);
+  position: static;
+  width: g.tb-vw(691.195);
   aspect-ratio: 1;
+  margin-top: g.tb-vw(-115.2);
   background: url(../img/point/point_img02@2x.webp) no-repeat center / cover;
   border-radius: 100%;
-  overflow: hidden;
-  z-index: 10;
+  overflow: hidden; 
+  @include g.tablet {
+    position: absolute;
+    top: g.pc-vw(-110);
+    right: 0;
+    width: g.pc-vw(506);
+    margin-top: 0;
+    z-index: 10;
+  }
+  @include g.pc {
+    top: g.rem(-150);
+    width: g.rem(512);
+  }
   &::before {
     content: '';
     position: absolute;
@@ -75,31 +85,46 @@
     position: relative;
     width: 100%;
     height: 100%;
-    padding-bottom: g.rem(50);
+    padding-bottom: 15%;
     color: g.$color-white;
     text-align: center;
-    border: g.rem(15) solid transparent;
+    border: g.rem(5) solid transparent;
     border-radius: 100%;
     overflow: hidden;
     z-index: 10;
     transition: all .3s ease;
-  }
-
-  & .p-point__list-number {
-    border-bottom: g.rem(3) solid g.$color-white;
     @include g.tablet {
-      border-bottom-width: g.rem(5);
+      border-width: g.rem(15);
+    }
+    @include g.pc {
+      padding-bottom: g.rem(50);
     }
   }
 
+  & .p-point__list-number {
+    border-color: g.$color-white;
+    }
+
   & .p-point__list-catch {
-    font-size: g.rem(26);
+    font-size: g.tb-vw(30);
     color: g.$color-white;
     transition: all .3s ease;
+    @include g.tablet {
+      font-size: g.pc-vw(22);
+    }
+    @include g.pc {
+      font-size: g.rem(26);
+    }
   }
 
   & .p-point__list-arrow {
-    background: g.$color-white;
+    bottom: 20%;
+    @include g.tablet {
+      bottom: 15%;
+    }
+    @include g.pc {
+      bottom: g.rem(60);
+    }
     &::before {
       border-color: transparent g.$color-black g.$color-black transparent;
     }

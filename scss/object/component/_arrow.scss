@@ -6,20 +6,34 @@
   bottom: g.rem(40);
   left: 50%;
   transform: translateX(-50%);
-  width: g.rem(45);
+  width: g.tb-vw(61.438);
   aspect-ratio: 1;
   border-radius: 100%;
   transition: all .3s ease;
+  @include g.tablet {
+    width: g.pc-vw(49.5);
+  }
+  @include g.pc {
+    width: g.rem(45);
+  }
   &::before {
     content: '';
     position: absolute;
     top: 50%;
     left: 50%;
-    width: g.rem(16);
-    height: g.rem(6);
+    width: g.tb-vw(22.039);
+    height: g.tb-vw(8.21);
     border-right: g.rem(1) solid g.$color-white;
     border-bottom: g.rem(1) solid g.$color-white;
     transform: translate(-60%, -50%) skewX(45deg);
     transition: all .3s ease;
+    @include g.tablet {
+      width: g.pc-vw(15.5);
+      height: g.pc-vw(4.5);
+    }
+    @include g.pc {
+      width: g.rem(16);
+      height: g.rem(6);
+    }
   }
 }
