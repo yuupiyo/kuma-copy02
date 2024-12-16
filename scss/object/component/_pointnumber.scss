@@ -1,1 +1,31 @@
 @use "../../foundation/global" as g;
+
+.c-pointnumber {
+  display: inline-block;
+  margin-bottom: .8em;
+  padding-bottom: .3em;
+  font-size: g.tb-vw(30);
+  line-height: .5;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: g.rem(3) solid g.$color-black;
+  transition: color .3s ease, border .3s ease;
+  @include g.tablet {
+    font-size: g.pc-vw(23);
+    border-bottom-width: g.rem(5);
+  }
+  @include g.pc {
+    font-size: g.rem(20);
+  }
+  & span {
+    display: block;
+    font-size: g.tb-vw(92);
+    line-height: 1;
+    @include g.tablet {
+      font-size: g.pc-vw(65);
+    }
+    @include g.pc {
+      font-size: g.rem(80);
+    }
+  }
+}
