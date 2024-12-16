@@ -752,7 +752,7 @@ img {
 }
 
 .p-point__image {
-  background: url(../../../img/yabai/yabai_img01@2x.webp) no-repeat center/cover;
+  background: url(../../../img/point/point_img01@2x.webp) no-repeat center/cover;
   height: 94.99921875vw;
 }
 @media screen and (width >= 769px) {
