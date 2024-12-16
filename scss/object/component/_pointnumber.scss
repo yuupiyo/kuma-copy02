@@ -9,7 +9,7 @@
   font-weight: bold;
   text-align: center;
   border-bottom: g.rem(3) solid g.$color-black;
-  transition: color .3s ease, border .3s ease;
+  transition: all .3s ease, border .3s ease;
   @include g.tablet {
     font-size: g.pc-vw(23);
     border-bottom-width: g.rem(5);

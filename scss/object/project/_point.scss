@@ -43,3 +43,65 @@
 .p-point__list {
   position: relative;
 }
+
+.p-point__list-item01 {
+  position: absolute;
+  top: g.rem(-150);
+  right: 0;
+  width: g.rem(512);
+  aspect-ratio: 1;
+  background: url(../img/point/point_img02@2x.webp) no-repeat center / cover;
+  border-radius: 100%;
+  overflow: hidden;
+  z-index: 10;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: g.$color-black;
+    border-radius: 100%;
+    opacity: 0;
+    z-index: 5;
+    transition: all .3s ease;
+  }
+
+  & a {
+    display: grid;
+    place-content: center;
+    place-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-bottom: g.rem(50);
+    color: g.$color-white;
+    text-align: center;
+    border: g.rem(15) solid transparent;
+    border-radius: 100%;
+    overflow: hidden;
+    z-index: 10;
+    transition: all .3s ease;
+  }
+
+  & .p-point__list-number {
+    border-bottom: g.rem(3) solid g.$color-white;
+    @include g.tablet {
+      border-bottom-width: g.rem(5);
+    }
+  }
+
+  & .p-point__list-catch {
+    font-size: g.rem(26);
+    color: g.$color-white;
+    transition: all .3s ease;
+  }
+
+  & .p-point__list-arrow {
+    background: g.$color-white;
+    &::before {
+      border-color: transparent g.$color-black g.$color-black transparent;
+    }
+  }
+}
