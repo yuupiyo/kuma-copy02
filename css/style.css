@@ -172,7 +172,7 @@ img {
   font-style: normal;
 }
 
-.c-inner, .c-inner__max1100, .c-inner__max970, .c-inner__point {
+.c-inner, .c-inner__max1100, .c-inner__max990, .c-inner__max970, .c-inner__point {
   max-width: 1200px;
   width: 90%;
   margin-inline: auto;
@@ -195,6 +195,10 @@ img {
     max-width: 970px;
     width: 90%;
   }
+}
+
+.c-inner__max990 {
+  max-width: 990px;
 }
 
 .c-inner__max1100 {
@@ -742,6 +746,10 @@ img {
 }
 .p-point__title-text--big {
   font-size: 200%;
+}
+
+.p-point__list {
+  position: relative;
 }
 
 .u-align-items__flex-end--pc-only {

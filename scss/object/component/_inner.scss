@@ -20,6 +20,10 @@
     width: 90%;
   }
 }
+.c-inner__max990 {
+  @extend .c-inner;
+  max-width: 990px;
+}
 .c-inner__max1100 {
   @extend .c-inner;
   max-width: 1100px;
