@@ -359,4 +359,21 @@
       background: g.$color-red;
     }
   }
+  .p-point__list-item04 a:hover {   
+      opacity: 1;
+    &::before {
+      opacity: 1;
+    }
+    & .p-point__list-number,
+    & .p-point__list-catch {
+      color: g.$color-black;
+      border-bottom-color: g.$color-black;
+    }
+    & .p-point__list-arrow {
+      background: g.$color-black;
+    }
+    & .p-point__list-arrow::before {
+      border-color: g.$color-white;
+    }
+  }
 }

@@ -1210,6 +1210,22 @@ img {
   .p-point__list-item03 .p-point__list-catch:hover .p-point__list-catch--span {
     background: #f00;
   }
+  .p-point__list-item04 a:hover {
+    opacity: 1;
+  }
+  .p-point__list-item04 a:hover::before {
+    opacity: 1;
+  }
+  .p-point__list-item04 a:hover .p-point__list-number, .p-point__list-item04 a:hover .p-point__list-catch {
+    color: #000;
+    border-bottom-color: #000;
+  }
+  .p-point__list-item04 a:hover .p-point__list-arrow {
+    background: #000;
+  }
+  .p-point__list-item04 a:hover .p-point__list-arrow::before {
+    border-color: #fff;
+  }
 }
 .u-align-items__flex-end--pc-only {
   align-items: flex-start;
