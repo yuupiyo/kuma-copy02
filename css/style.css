@@ -942,6 +942,28 @@ img {
   display: block;
   transition: all 0.3s ease;
 }
+.p-point__list-item02 .p-point__list-catch {
+  width: 7em;
+  font-size: 12.8vw;
+  color: transparent;
+  line-height: 1;
+  letter-spacing: 0;
+  background: url(../../../img/point/point_img03@2x.webp) no-repeat center/cover;
+  -webkit-background-clip: text;
+          background-clip: text;
+  transition: all 0.3s ease;
+}
+@media screen and (width >= 769px) {
+  .p-point__list-item02 .p-point__list-catch {
+    font-size: 6vw;
+  }
+}
+@media screen and (width >= 1101px) {
+  .p-point__list-item02 .p-point__list-catch {
+    width: 100%;
+    font-size: 4rem;
+  }
+}
 
 @media (any-hover: hover) {
   .p-point__list-item01 a:hover {

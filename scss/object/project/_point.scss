@@ -148,6 +148,23 @@
     display: block;
     transition: all .3s ease;
   }
+  & .p-point__list-catch {
+    width: 7em;
+    font-size: g.tb-vw(98.304);
+    color: transparent;  
+    line-height: 1;
+    letter-spacing: 0;
+    background: url(../../../img/point/point_img03@2x.webp) no-repeat center / cover;
+    background-clip: text;
+    transition: all .3s ease;
+    @include g.tablet {
+      font-size: g.pc-vw(66);
+    }
+    @include g.pc {
+      width: 100%;
+      font-size: g.rem(64);
+    }
+  }
 }
 
 // hover時
