@@ -199,30 +199,32 @@
     right: g.rem(80);
   }
   & a {
-    display: block;
+    display: flex;
+    align-items: flex-start;
     width: 100%;
-    @include g.tablet {
-      width: g.pc-vw(221.141);
-    }
-    @include g.pc {
-      width: g.rem(220);
-    }
   }
-  & .p-point__list-arrow {
-    position: absolute;
-    top: g.tb-vw(161.28);
-    left: g.tb-vw(49.920);
-    right: auto;
-    transform: translateX(0);
+  & .p-point__list-number {
+    padding-top: g.tb-vw(23.04);
     @include g.tablet {
-      top: g.pc-vw(165);
-      left: auto;
-      right: 108%;
+      padding-top: g.pc-vw(55);
     }
-    @include g.pc {
-      top: g.rem(150);
-    }
+    padding-top: g.rem(30);
   }
+  // & .p-point__list-arrow {
+  //   position: absolute;
+  //   top: g.tb-vw(161.28);
+  //   left: g.tb-vw(49.920);
+  //   right: auto;
+  //   transform: translateX(0);
+  //   @include g.tablet {
+  //     top: g.pc-vw(165);
+  //     left: auto;
+  //     right: 108%;
+  //   }
+  //   @include g.pc {
+  //     top: g.rem(150);
+  //   }
+  // }
 }
 
 // hover時
