@@ -2,11 +2,11 @@
 
 .c-title {
   &__background {
-    display: inline-block;
     overflow: hidden;
     white-space: nowrap;
   }
   &__text {
+    display: inline-block;
     vertical-align: text-bottom;
   }
 }
