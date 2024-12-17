@@ -217,7 +217,7 @@ img {
 .c-font__sans {
   font-family: "Noto Sans JP", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 900;
+  font-weight: bold;
   font-style: normal;
 }
 
@@ -1186,20 +1186,104 @@ img {
   border-color: transparent #000 #000 transparent;
 }
 
-.p-point__list-item04 {
+.p-point__list-item05 {
   position: relative;
   width: 100%;
   margin: -5% 0;
   z-index: 8;
 }
 @media screen and (width >= 769px) {
-  .p-point__list-item04 {
+  .p-point__list-item05 {
     width: 42%;
+    margin: 0;
   }
 }
 @media screen and (width >= 1101px) {
-  .p-point__list-item04 {
+  .p-point__list-item05 {
     width: 25rem;
+  }
+}
+.p-point__list-item05 a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  position: relative;
+  width: 90vw;
+  height: 75vw;
+  padding: 0 0 10%;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+@media screen and (width >= 769px) {
+  .p-point__list-item05 a {
+    width: 40vw;
+    height: 46vw;
+    padding: 0 34% 10% 0;
+  }
+}
+@media screen and (width >= 1101px) {
+  .p-point__list-item05 a {
+    width: 25rem;
+    height: 28.125rem;
+    padding: 0 8.125rem 3.125rem 0;
+  }
+}
+.p-point__list-item05 .p-point__hexagon {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 90vw;
+  height: 75vw;
+  background: rgba(187, 187, 187, 0.5);
+  -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+          clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+@media screen and (width >= 769px) {
+  .p-point__list-item05 .p-point__hexagon {
+    width: 53.6363636364vw;
+    height: 46vw;
+  }
+}
+@media screen and (width >= 1101px) {
+  .p-point__list-item05 .p-point__hexagon {
+    width: 33.125rem;
+    height: 28.125rem;
+  }
+}
+.p-point__list-item05 .p-point__list-catch {
+  font-size: 4.0364583333vw;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+@media screen and (width >= 769px) {
+  .p-point__list-item05 .p-point__list-catch {
+    font-size: 2vw;
+  }
+}
+@media screen and (width >= 1101px) {
+  .p-point__list-item05 .p-point__list-catch {
+    font-size: 1.625rem;
+  }
+}
+.p-point__list-item05 .p-point__list-arrow {
+  bottom: 18%;
+  margin-left: -1%;
+}
+@media screen and (width >= 769px) {
+  .p-point__list-item05 .p-point__list-arrow {
+    bottom: 20%;
+    margin-left: -16%;
+  }
+}
+@media screen and (width >= 1101px) {
+  .p-point__list-item05 .p-point__list-arrow {
+    bottom: 5rem;
+    margin-left: -4.0625rem;
   }
 }
 
