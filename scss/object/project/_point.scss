@@ -456,4 +456,22 @@
       border-color: g.$color-white;
     }
   }
+  .p-point__list-item05 a:hover {
+    opacity: 1;
+    & .p-point__hexagon {
+      background: rgba($color: #f00, $alpha: 1.0);
+      transform: rotate(60deg);
+    }
+    & .p-point__list-number,
+    & .p-point__list-catch {
+      color: g.$color-white;
+      border-bottom-color: g.$color-white;
+    }
+    & .p-point__list-arrow {
+      background: g.$color-white;
+    }
+    & .p-point__list-arrow::before {
+      border-color: g.$color-red;
+    }
+  }
 }
