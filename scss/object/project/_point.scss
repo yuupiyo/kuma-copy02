@@ -198,6 +198,16 @@
     top: g.rem(340);
     right: g.rem(80);
   }
+  & a {
+    display: block;
+    width: 100%;
+    @include g.tablet {
+      width: g.pc-vw(221.141);
+    }
+    @include g.pc {
+      width: g.rem(220);
+    }
+  }
 }
 
 // hover時
