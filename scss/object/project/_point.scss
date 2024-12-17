@@ -132,6 +132,7 @@
 }
 // point02
 .p-point__list-item02 {
+  position: relative;
   width: 100%;
   margin: -8% 0 5%;
   padding: 0;
@@ -163,6 +164,20 @@
     @include g.pc {
       width: 100%;
       font-size: g.rem(64);
+    }
+  }
+  & .p-point__list-arrow {
+    bottom: g.tb-vw(15.36);
+    left: auto;
+    right: g.tb-vw(23.04);
+    transform: translateX(0);
+    @include g.tablet {
+      bottom: g.pc-vw(5.5);
+      right: 0;
+    }
+    @include g.pc {
+      bottom: g.rem(5);
+      right: g.rem(40);
     }
   }
 }

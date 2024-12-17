@@ -921,6 +921,7 @@ img {
 }
 
 .p-point__list-item02 {
+  position: relative;
   width: 100%;
   margin: -8% 0 5%;
   padding: 0;
@@ -962,6 +963,24 @@ img {
   .p-point__list-item02 .p-point__list-catch {
     width: 100%;
     font-size: 4rem;
+  }
+}
+.p-point__list-item02 .p-point__list-arrow {
+  bottom: 2vw;
+  left: auto;
+  right: 3vw;
+  transform: translateX(0);
+}
+@media screen and (width >= 769px) {
+  .p-point__list-item02 .p-point__list-arrow {
+    bottom: 0.5vw;
+    right: 0;
+  }
+}
+@media screen and (width >= 1101px) {
+  .p-point__list-item02 .p-point__list-arrow {
+    bottom: 0.3125rem;
+    right: 2.5rem;
   }
 }
 
