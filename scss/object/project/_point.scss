@@ -208,6 +208,21 @@
       width: g.rem(220);
     }
   }
+  & .p-point__list-arrow {
+    position: absolute;
+    top: g.tb-vw(161.28);
+    left: g.tb-vw(49.920);
+    right: auto;
+    transform: translateX(0);
+    @include g.tablet {
+      top: g.pc-vw(165);
+      left: auto;
+      right: 108%;
+    }
+    @include g.pc {
+      top: g.rem(150);
+    }
+  }
 }
 
 // hover時

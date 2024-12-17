@@ -1037,6 +1037,25 @@ img {
     width: 13.75rem;
   }
 }
+.p-point__list-item03 .p-point__list-arrow {
+  position: absolute;
+  top: 21vw;
+  left: 6.5vw;
+  right: auto;
+  transform: translateX(0);
+}
+@media screen and (width >= 769px) {
+  .p-point__list-item03 .p-point__list-arrow {
+    top: 15vw;
+    left: auto;
+    right: 108%;
+  }
+}
+@media screen and (width >= 1101px) {
+  .p-point__list-item03 .p-point__list-arrow {
+    top: 9.375rem;
+  }
+}
 
 @media (any-hover: hover) {
   .p-point__list-item01 a:hover {
