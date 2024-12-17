@@ -242,6 +242,18 @@
     }
   }
 }
+// point04
+.p-point__list-item04 {
+  position: relative;
+  width: 100%;
+  z-index: 8;
+  @include g.tablet {
+    width: 60%;
+  }
+  @include g.pc {
+    width: g.rem(600);
+  }
+}
 
 // hover時
 @media (any-hover: hover) {
