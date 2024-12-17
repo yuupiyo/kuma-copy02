@@ -1186,6 +1186,23 @@ img {
   border-color: transparent #000 #000 transparent;
 }
 
+.p-point__list-item04 {
+  position: relative;
+  width: 100%;
+  margin: -5% 0;
+  z-index: 8;
+}
+@media screen and (width >= 769px) {
+  .p-point__list-item04 {
+    width: 42%;
+  }
+}
+@media screen and (width >= 1101px) {
+  .p-point__list-item04 {
+    width: 25rem;
+  }
+}
+
 @media (any-hover: hover) {
   .p-point__list-item01 a:hover {
     border-color: #f00;
