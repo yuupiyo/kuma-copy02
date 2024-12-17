@@ -144,6 +144,10 @@
     width: g.rem(480);
     padding-top: g.rem(80);
   }
+  & a {
+    display: block;
+    transition: all .3s ease;
+  }
 }
 
 // hover時

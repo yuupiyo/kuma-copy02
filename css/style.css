@@ -938,6 +938,10 @@ img {
     padding-top: 5rem;
   }
 }
+.p-point__list-item02 a {
+  display: block;
+  transition: all 0.3s ease;
+}
 
 @media (any-hover: hover) {
   .p-point__list-item01 a:hover {
