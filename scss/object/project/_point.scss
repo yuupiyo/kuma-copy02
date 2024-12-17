@@ -181,6 +181,24 @@
     }
   }
 }
+// point03
+.p-point__list-item03 {
+  position: static;
+  height: g.tb-vw(445.438);
+  margin: 5% 0;
+  z-index: 8;
+  @include g.tablet {
+    position: absolute;
+    top: g.pc-vw(363);
+    right: g.pc-vw(55);
+    height: auto;
+    margin: 0;
+  }
+  @include g.pc {
+    top: g.rem(340);
+    right: g.rem(80);
+  }
+}
 
 // hover時
 @media (any-hover: hover) {

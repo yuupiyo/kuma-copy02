@@ -1,8 +1,23 @@
 @use "../../foundation/global" as g;
 
+// 中の要素ごと消したい時
 .c-display__pconly {
   display: none;
   @include g.tablet {
     display: block;
+  }
+}
+
+// タグだけ入れ替えたい時
+.c-display__sp-contents {
+  display: contents;
+  @include g.tablet {
+    display: block;
+  }
+}
+.c-display__pc-contents {
+  display: block;
+  @include g.tablet {
+    display: contents;
   }
 }
