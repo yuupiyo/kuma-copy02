@@ -1105,6 +1105,9 @@ img {
   .p-point__list-item02 .p-point__list-catch:hover {
     color: #f00;
   }
+  .p-point__list-item03 .p-point__list-catch:hover .p-point__list-catch--span {
+    background: #f00;
+  }
 }
 .u-align-items__flex-end--pc-only {
   align-items: flex-start;

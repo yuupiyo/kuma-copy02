@@ -268,4 +268,9 @@
       color: g.$color-red;
     }
   }
+  .p-point__list-item03 .p-point__list-catch:hover  {
+    & .p-point__list-catch--span {
+      background: g.$color-red;
+    }
+  }
 }
