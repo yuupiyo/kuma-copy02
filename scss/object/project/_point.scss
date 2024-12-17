@@ -131,7 +131,20 @@
   }
 }
 // point02
-
+.p-point__list-item02 {
+  width: 100%;
+  margin: -8% 0 5%;
+  padding: 0;
+  @include g.tablet {
+    width: 46%;
+    margin: 0;
+    padding-top: g.pc-vw(110);
+  }
+  @include g.pc {
+    width: g.rem(480);
+    padding-top: g.rem(80);
+  }
+}
 
 // hover時
 @media (any-hover: hover) {
