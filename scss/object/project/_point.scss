@@ -199,4 +199,12 @@
       }
     }
   }
+  .p-point__list-item02 {
+    & a:hover {
+    opacity: 1;
+    }
+    & .p-point__list-catch:hover {
+      color: g.$color-red;
+    }
+  }
 }
