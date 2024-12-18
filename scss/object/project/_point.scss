@@ -33,11 +33,18 @@
 }
 .p-point__title-bg {
   display: inline-block;
-  margin: 0 g.rem(15);
-  font-size: g.rem(40);
+  margin: 0 .3em;
+  font-size: g.tb-vw(46);
   line-height: 1.2;
   letter-spacing: .34em;
   transition: max-height .5s ease;
+  @include g.tablet {
+    margin: 0 g.rem(15);
+    font-size: g.rem(30);
+  }
+  @include g.l-pc {
+    font-size: g.rem(40);
+  }
 }
 .p-point__title-text {
   margin-top: g.rem(10);
