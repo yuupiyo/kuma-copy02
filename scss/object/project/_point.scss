@@ -274,7 +274,7 @@
     flex-flow: row;
     position: relative;
     width: g.tb-vw(768);
-    height: g.tb-vw(537.59);
+    height: g.tb-vw(538);
     margin: 0 g.tb-vw(-38.4);
     padding: 38% 0 0;
     background: url(../../../img/point/point_img04_sp@2x.webp) no-repeat center / cover;
@@ -282,12 +282,12 @@
     overflow: hidden;
     @include g.tablet {
       flex-flow: column;
-      width: g.pc-vw(880);
-      height: g.pc-vw(440);
-      margin: g.pc-vw(66) 0 g.pc-vw(66) g.pc-vw(-275);
+      width: g.pc-vw(960);
+      height: g.pc-vw(490);
+      margin: g.pc-vw(72) 0 g.pc-vw(72) g.pc-vw(-300);
       padding: 0 0 0 75%;
       background-image: url(../../../img/point/point_img04@2x.webp);
-      border-radius: g.rem(5);
+      border-radius: g.rem(15);
     }
     @include g.pc {
       width: g.rem(880);
@@ -326,7 +326,7 @@
     text-align: left;
     z-index: 10;
     @include g.tablet {
-      font-size: g.pc-vw(22);
+      font-size: g.pc-vw(25);
       text-align: center;
     }
     @include g.pc {
