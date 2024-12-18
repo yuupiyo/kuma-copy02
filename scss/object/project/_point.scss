@@ -145,7 +145,7 @@
   @include g.tablet {
     width: 46%;
     margin: 0;
-    padding-top: g.pc-vw(110);
+    padding-top: g.pc-vw(120);
   }
   @include g.pc {
     width: g.rem(480);
@@ -158,6 +158,7 @@
   & .p-point__list-catch {
     width: 7em;
     font-size: g.tb-vw(98.304);
+    font-weight: 900;
     color: transparent;  
     line-height: 1;
     letter-spacing: 0;
@@ -165,7 +166,7 @@
     background-clip: text;
     transition: all .3s ease;
     @include g.tablet {
-      font-size: g.pc-vw(66);
+      font-size: g.pc-vw(72);
     }
     @include g.pc {
       width: 100%;
