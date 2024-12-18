@@ -1358,6 +1358,25 @@ img {
   border-bottom: 0.125rem solid #000;
   transition: all 0.3s ease;
 }
+.p-point__list-item06 .p-point__list-arrow {
+  top: auto;
+  bottom: 24vw;
+  left: 23vw;
+  transform: translateX(0);
+}
+@media screen and (width >= 769px) {
+  .p-point__list-item06 .p-point__list-arrow {
+    top: 3.5vw;
+    bottom: unset;
+    left: 10vw;
+  }
+}
+@media screen and (width >= 1101px) {
+  .p-point__list-item06 .p-point__list-arrow {
+    top: 3.75rem;
+    left: 7.5rem;
+  }
+}
 
 @media (any-hover: hover) {
   .p-point__list-item01 a:hover {

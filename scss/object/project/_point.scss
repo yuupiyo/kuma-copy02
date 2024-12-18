@@ -469,6 +469,21 @@
     border-bottom: g.rem(2) solid g.$color-black;
     transition: all .3s ease;
   }
+  & .p-point__list-arrow {
+    top: auto;
+    bottom: g.tb-vw(184.32);
+    left: g.tb-vw(176.64);
+    transform: translateX(0);
+    @include g.tablet {
+      top: g.pc-vw(38.5);
+      bottom: unset;
+      left: g.pc-vw(110);
+    }
+    @include g.pc {
+      top: g.rem(60);
+      left: g.rem(120);
+    }
+  }
 }
 
 // hover時
