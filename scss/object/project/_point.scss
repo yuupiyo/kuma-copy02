@@ -73,9 +73,9 @@
   overflow: hidden; 
   @include g.tablet {
     position: absolute;
-    top: g.pc-vw(-110);
+    top: g.pc-vw(-120);
     right: 0;
-    width: g.pc-vw(506);
+    width: g.pc-vw(552);
     margin-top: 0;
     z-index: 10;
   }

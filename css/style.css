@@ -893,9 +893,9 @@ img {
 @media screen and (width >= 769px) {
   .p-point__list-item01 {
     position: absolute;
-    top: -9.1666666667vw;
+    top: -10vw;
     right: 0;
-    width: 42.1666666667vw;
+    width: 46vw;
     margin-top: 0;
     z-index: 10;
   }
