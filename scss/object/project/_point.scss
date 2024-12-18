@@ -196,8 +196,8 @@
   z-index: 8;
   @include g.tablet {
     position: absolute;
-    top: g.pc-vw(363);
-    right: g.pc-vw(55);
+    top: g.pc-vw(397);
+    right: g.pc-vw(60);
     height: auto;
     margin: 0;
   }
@@ -217,8 +217,8 @@
   & .p-point__list-number {
     padding-top: g.tb-vw(23.04);
     @include g.tablet {
-      margin-right: 1em;
-      padding-top: g.pc-vw(55);
+      margin-right: .6em;
+      padding-top: g.pc-vw(60);
     }
     @include g.pc {
       margin-right: 0;
@@ -226,12 +226,6 @@
     }
   }
   & .p-point__list-catch {
-    @include g.tablet {
-      padding-right: 1em;
-    }
-    @include g.pc {
-      padding-right: 0;
-    }
     &--span {
       margin: 0 .2em;
       padding: g.pc-vw(55) 0 1em .15em;      
@@ -239,7 +233,7 @@
       line-height: 1.1;
       transition: all .3s ease;
       @include g.tablet {
-        font-size: g.pc-vw(40);
+        font-size: g.pc-vw(48);
       }
       @include g.pc {
         margin: 0 g.rem(10) 0 g.rem(5.2);
@@ -253,8 +247,8 @@
     bottom: 50%;
     left: g.tb-vw(85);        
     @include g.tablet {
-      bottom: 59%;
-      left: 3.6em;
+      bottom: 62.5%;
+      left: g.pc-vw(60);
     }
     @include g.pc {
       bottom: 69%;

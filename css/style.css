@@ -258,7 +258,7 @@ img {
   display: inline-block;
   margin-bottom: 0.8em;
   padding-bottom: 0.3em;
-  font-size: 3.90625vw;
+  font-size: 4.0364583333vw;
   line-height: 0.5;
   font-weight: bold;
   text-align: center;
@@ -267,7 +267,7 @@ img {
 }
 @media screen and (width >= 769px) {
   .c-pointnumber {
-    font-size: 1.9166666667vw;
+    font-size: 2.0833333333vw;
     border-bottom-width: 0.3125rem;
   }
 }
@@ -278,12 +278,12 @@ img {
 }
 .c-pointnumber span {
   display: block;
-  font-size: 11.9791666667vw;
+  font-size: 12.109375vw;
   line-height: 1;
 }
 @media screen and (width >= 769px) {
   .c-pointnumber span {
-    font-size: 5.4166666667vw;
+    font-size: 6vw;
   }
 }
 @media screen and (width >= 1101px) {
@@ -1041,8 +1041,8 @@ img {
 @media screen and (width >= 769px) {
   .p-point__list-item03 {
     position: absolute;
-    top: 30.25vw;
-    right: 4.5833333333vw;
+    top: 33.0833333333vw;
+    right: 5vw;
     height: auto;
     margin: 0;
   }
@@ -1069,24 +1069,14 @@ img {
 }
 @media screen and (width >= 769px) {
   .p-point__list-item03 .p-point__list-number {
-    margin-right: 1em;
-    padding-top: 4.5833333333vw;
+    margin-right: 0.6em;
+    padding-top: 5vw;
   }
 }
 @media screen and (width >= 1101px) {
   .p-point__list-item03 .p-point__list-number {
     margin-right: 0;
     padding-top: 1.875rem;
-  }
-}
-@media screen and (width >= 769px) {
-  .p-point__list-item03 .p-point__list-catch {
-    padding-right: 1em;
-  }
-}
-@media screen and (width >= 1101px) {
-  .p-point__list-item03 .p-point__list-catch {
-    padding-right: 0;
   }
 }
 .p-point__list-item03 .p-point__list-catch--span {
@@ -1098,7 +1088,7 @@ img {
 }
 @media screen and (width >= 769px) {
   .p-point__list-item03 .p-point__list-catch--span {
-    font-size: 3.3333333333vw;
+    font-size: 4vw;
   }
 }
 @media screen and (width >= 1101px) {
@@ -1115,8 +1105,8 @@ img {
 }
 @media screen and (width >= 769px) {
   .p-point__list-item03 .p-point__list-arrow {
-    bottom: 59%;
-    left: 3.6em;
+    bottom: 62.5%;
+    left: 5vw;
   }
 }
 @media screen and (width >= 1101px) {
