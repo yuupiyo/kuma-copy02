@@ -6,12 +6,12 @@
   bottom: g.rem(40);
   left: 50%;
   transform: translateX(-50%);
-  width: g.tb-vw(61.438);
+  width: g.tb-vw(61.5);
   aspect-ratio: 1;
   border-radius: 100%;
   transition: all .3s ease;
   @include g.tablet {
-    width: g.pc-vw(49.5);
+    width: g.pc-vw(54);
   }
   @include g.pc {
     width: g.rem(45);

@@ -34,14 +34,14 @@ img {
   bottom: 2.5rem;
   left: 50%;
   transform: translateX(-50%);
-  width: 7.9997395833vw;
+  width: 8.0078125vw;
   aspect-ratio: 1;
   border-radius: 100%;
   transition: all 0.3s ease;
 }
 @media screen and (width >= 769px) {
   .c-arrow__point {
-    width: 4.125vw;
+    width: 4.5vw;
   }
 }
 @media screen and (width >= 1101px) {
