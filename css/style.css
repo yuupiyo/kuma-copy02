@@ -1103,8 +1103,9 @@ img {
   }
 }
 .p-point__list-item03 .p-point__list-arrow {
+  align-self: baseline;
   bottom: 50%;
-  left: 5em;
+  left: 11.0677083333vw;
 }
 @media screen and (width >= 769px) {
   .p-point__list-item03 .p-point__list-arrow {
