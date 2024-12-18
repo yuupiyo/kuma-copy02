@@ -1340,7 +1340,7 @@ img {
 .p-point__list-item06 .p-point__list-catch {
   font-size: 7.5vw;
   line-height: 1.4;
-  transition: all 0.3s ease;
+  transition: all 0.1s ease;
 }
 @media screen and (width >= 769px) {
   .p-point__list-item06 .p-point__list-catch {
@@ -1433,6 +1433,15 @@ img {
     background: #fff;
   }
   .p-point__list-item05 a:hover .p-point__list-arrow::before {
+    border-color: #f00;
+  }
+  .p-point__list-item06 a:hover {
+    opacity: 1;
+  }
+  .p-point__list-item06 a:hover .p-point__list-catch {
+    color: #f00;
+  }
+  .p-point__list-item06 a:hover .p-point__list-catch--span {
     border-color: #f00;
   }
 }

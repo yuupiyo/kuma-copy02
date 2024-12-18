@@ -455,7 +455,7 @@
   & .p-point__list-catch {
     font-size: g.tb-vw(57.6);
     line-height: 1.4;
-    transition: all .3s ease;
+    transition: all .1s ease;
     @include g.tablet {
       font-size: g.pc-vw(49.5);
       font-weight: normal;
@@ -548,6 +548,15 @@
       background: g.$color-white;
     }
     & .p-point__list-arrow::before {
+      border-color: g.$color-red;
+    }
+  }
+  .p-point__list-item06 a:hover {
+    opacity: 1;
+    & .p-point__list-catch {
+      color: g.$color-red;
+    }
+    & .p-point__list-catch--span {
       border-color: g.$color-red;
     }
   }
