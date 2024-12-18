@@ -28,11 +28,19 @@
 }
 .p-performance__title-bg {
   display: inline-block;
-  margin: g.rem(5) 0;
-  font-size: g.rem(30);
+  margin: .1em 0;
+  font-size: g.tb-vw(38.4);
   line-height: 1.8;
-  letter-spacing: .34em;
-  transition: max-width .5s ease;
+  letter-spacing: .2em;
+  transition: all .5s ease;
+  @include g.tablet {
+    margin: g.rem(5) 0;
+    font-size: g.rem(26);
+    letter-spacing: .34em;
+  }
+  @include g.pc {
+    font-size: g.rem(30);
+  }
 }
 .p-performance__title-text {
   margin-left: .5em;

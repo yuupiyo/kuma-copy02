@@ -667,11 +667,23 @@ img {
 
 .p-performance__title-bg {
   display: inline-block;
-  margin: 0.3125rem 0;
-  font-size: 1.875rem;
+  margin: 0.1em 0;
+  font-size: 5vw;
   line-height: 1.8;
-  letter-spacing: 0.34em;
-  transition: max-width 0.5s ease;
+  letter-spacing: 0.2em;
+  transition: all 0.5s ease;
+}
+@media screen and (width >= 769px) {
+  .p-performance__title-bg {
+    margin: 0.3125rem 0;
+    font-size: 1.625rem;
+    letter-spacing: 0.34em;
+  }
+}
+@media screen and (width >= 1101px) {
+  .p-performance__title-bg {
+    font-size: 1.875rem;
+  }
 }
 
 .p-performance__title-text {
