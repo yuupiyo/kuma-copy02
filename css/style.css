@@ -54,8 +54,8 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 2.8696614583vw;
-  height: 1.0690104167vw;
+  width: 2.9947916667vw;
+  height: 1.2109375vw;
   border-right: 0.0625rem solid #fff;
   border-bottom: 0.0625rem solid #fff;
   transform: translate(-60%, -50%) skewX(45deg);
@@ -63,8 +63,8 @@ img {
 }
 @media screen and (width >= 769px) {
   .c-arrow__point::before {
-    width: 1.2916666667vw;
-    height: 0.375vw;
+    width: 1.5vw;
+    height: 0.5vw;
   }
 }
 @media screen and (width >= 1101px) {

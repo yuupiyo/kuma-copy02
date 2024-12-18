@@ -21,15 +21,15 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: g.tb-vw(22.039);
-    height: g.tb-vw(8.21);
+    width: g.tb-vw(23);
+    height: g.tb-vw(9.3);
     border-right: g.rem(1) solid g.$color-white;
     border-bottom: g.rem(1) solid g.$color-white;
     transform: translate(-60%, -50%) skewX(45deg);
     transition: all .3s ease;
     @include g.tablet {
-      width: g.pc-vw(15.5);
-      height: g.pc-vw(4.5);
+      width: g.pc-vw(18);
+      height: g.pc-vw(6);
     }
     @include g.pc {
       width: g.rem(16);
