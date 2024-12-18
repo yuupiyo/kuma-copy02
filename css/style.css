@@ -869,7 +869,12 @@ img {
   transition: opacity 0.5s ease;
 }
 .p-point__title-text--big {
-  font-size: 200%;
+  font-size: 180%;
+}
+@media screen and (width >= 1201px) {
+  .p-point__title-text--big {
+    font-size: 200%;
+  }
 }
 
 .p-point__list {

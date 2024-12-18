@@ -51,7 +51,10 @@
   transition: opacity .5s ease;
   &--big {
     @extend .p-point__title-text;
-    font-size: 200%;
+    font-size: 180%;
+    @include g.l-pc {
+      font-size: 200%;
+    }
   }
 }
 
