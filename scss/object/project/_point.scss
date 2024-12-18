@@ -448,6 +448,10 @@
       height: g.rem(608);
     }
   }
+  & a {
+    display: block;
+    transition: all .3s ease;
+  }
 }
 
 // hover時
