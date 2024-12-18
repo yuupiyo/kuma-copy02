@@ -1333,6 +1333,31 @@ img {
     height: 38rem;
   }
 }
+.p-point__list-item06 a {
+  display: block;
+  transition: all 0.3s ease;
+}
+.p-point__list-item06 .p-point__list-catch {
+  font-size: 7.5vw;
+  line-height: 1.4;
+  transition: all 0.3s ease;
+}
+@media screen and (width >= 769px) {
+  .p-point__list-item06 .p-point__list-catch {
+    font-size: 4.5vw;
+    font-weight: normal;
+  }
+}
+@media screen and (width >= 1101px) {
+  .p-point__list-item06 .p-point__list-catch {
+    font-size: 3rem;
+  }
+}
+.p-point__list-item06 .p-point__list-catch--span {
+  display: inline-block;
+  border-bottom: 0.125rem solid #000;
+  transition: all 0.3s ease;
+}
 
 @media (any-hover: hover) {
   .p-point__list-item01 a:hover {

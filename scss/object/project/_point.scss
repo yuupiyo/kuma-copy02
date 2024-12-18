@@ -452,6 +452,23 @@
     display: block;
     transition: all .3s ease;
   }
+  & .p-point__list-catch {
+    font-size: g.tb-vw(57.6);
+    line-height: 1.4;
+    transition: all .3s ease;
+    @include g.tablet {
+      font-size: g.pc-vw(49.5);
+      font-weight: normal;
+    }
+    @include g.pc {
+      font-size: g.rem(48);
+    }
+  }
+  & .p-point__list-catch--span {
+    display: inline-block;
+    border-bottom: g.rem(2) solid g.$color-black;
+    transition: all .3s ease;
+  }
 }
 
 // hover時
