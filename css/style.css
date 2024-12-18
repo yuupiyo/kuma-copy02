@@ -798,8 +798,19 @@ img {
 
 .p-point {
   position: relative;
+  margin-top: 20%;
   padding-top: 3.125rem;
   overflow: hidden;
+}
+@media screen and (width >= 769px) {
+  .p-point {
+    margin-top: 5rem;
+  }
+}
+@media screen and (width >= 1101px) {
+  .p-point {
+    margin-top: 8.125rem;
+  }
 }
 
 .p-point__image {

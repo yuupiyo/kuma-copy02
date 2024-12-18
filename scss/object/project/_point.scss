@@ -2,8 +2,15 @@
 
 .p-point {
   position: relative;
+  margin-top: 20%;
   padding-top: g.rem(50);
   overflow: hidden;
+  @include g.tablet {
+    margin-top: g.rem(80);
+  }
+  @include g.pc {
+    margin-top: g.rem(130);
+  }
 }
 
 // イメージ画像
