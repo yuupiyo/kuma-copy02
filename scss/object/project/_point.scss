@@ -350,12 +350,14 @@
     position: relative;
     width: g.tb-vw(691.2);
     height: g.tb-vw(576);
+    margin-bottom: 0;
     padding: 0 0 10%;
     text-align: center;
     transition: all .3s ease;
     @include g.tablet {
       width: g.pc-vw(440);
       height: g.pc-vw(506);
+      margin-bottom: 1em;
       padding: 0 34% 10% 0;
     }
     @include g.pc {
