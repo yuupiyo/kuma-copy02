@@ -3,6 +3,7 @@
 .p-point {
   position: relative;
   padding-top: g.rem(50);
+  overflow: hidden;
 }
 
 // イメージ画像
@@ -405,6 +406,46 @@
     @include g.pc {
       bottom: g.rem(80);
       margin-left: g.rem(-65);
+    }
+  }
+}
+// point06
+.p-point__list-item06 {
+  position: relative;
+  padding-top: g.tb-vw(460.8);
+  padding-left: g.tb-vw(38.4);
+  @include g.tablet {
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+    padding: 0;
+    z-index: 5;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 70%;
+    left: g.tb-vw(-38.4);
+    width: g.tb-vw(768);
+    height: g.tb-vw(537.594);
+    background: url(../../../img/point/point_img05_sp@2x.webp) no-repeat center / 120% auto;
+    border-radius: 0;
+    overflow: hidden;
+    z-index: -1;
+    @include g.tablet {
+      top: unset;
+      left: g.pc-vw(-88);
+      width: g.pc-vw(946);
+      height: g.pc-vw(660);
+      background-image: url(../../../img/point/point_img05@2x.webp);
+      background-size: contain;
+      border-radius: g.rem(15);
+    }
+    @include g.pc{
+      left: g.rem(-100);
+      width: g.rem(874);
+      height: g.rem(608);
     }
   }
 }

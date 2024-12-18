@@ -799,6 +799,7 @@ img {
 .p-point {
   position: relative;
   padding-top: 3.125rem;
+  overflow: hidden;
 }
 
 .p-point__image {
@@ -1284,6 +1285,52 @@ img {
   .p-point__list-item05 .p-point__list-arrow {
     bottom: 5rem;
     margin-left: -4.0625rem;
+  }
+}
+
+.p-point__list-item06 {
+  position: relative;
+  padding-top: 60vw;
+  padding-left: 5vw;
+}
+@media screen and (width >= 769px) {
+  .p-point__list-item06 {
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+    padding: 0;
+    z-index: 5;
+  }
+}
+.p-point__list-item06::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 70%;
+  left: -5vw;
+  width: 100vw;
+  height: 69.99921875vw;
+  background: url(../../../img/point/point_img05_sp@2x.webp) no-repeat center/120% auto;
+  border-radius: 0;
+  overflow: hidden;
+  z-index: -1;
+}
+@media screen and (width >= 769px) {
+  .p-point__list-item06::before {
+    top: unset;
+    left: -8vw;
+    width: 86vw;
+    height: 60vw;
+    background-image: url(../../../img/point/point_img05@2x.webp);
+    background-size: contain;
+    border-radius: 0.9375rem;
+  }
+}
+@media screen and (width >= 1101px) {
+  .p-point__list-item06::before {
+    left: -6.25rem;
+    width: 54.625rem;
+    height: 38rem;
   }
 }
 
