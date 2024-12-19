@@ -12,3 +12,34 @@
     margin-top: g.rem(130);
   }
 }
+
+// title
+.p-blog__title {
+  position: absolute;
+  top: 0;
+  left: 46%;
+  font-size: g.tb-vw(31);
+  line-height: 180%;
+  letter-spacing: .1em;
+  z-index: 10;
+  @include g.tablet {
+    left: 50%;
+    font-size: g.rem(20);
+    z-index: 0;
+  }
+  @include g.pc {
+    font-size: g.rem(26);
+  }
+  &--span {
+    display: inline-block;
+    font-size: g.tb-vw(69.12);
+    line-height: 180%;
+    letter-spacing: .2em;
+    @include g.tablet {
+      font-size: g.rem(50);
+    }
+    @include g.pc {
+      font-size: g.rem(66);
+    }
+  }
+}
