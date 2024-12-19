@@ -74,6 +74,31 @@ img {
   }
 }
 
+.c-arrow__button {
+  position: relative;
+}
+.c-arrow__button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 2em;
+  transform: translateY(-50%) skewX(45deg);
+  height: 0.4em;
+  width: 1em;
+  border-right: 0.0625rem solid #000;
+  border-bottom: 0.0625rem solid #000;
+}
+@media screen and (width >= 769px) {
+  .c-arrow__button::before {
+    left: 5em;
+  }
+}
+@media screen and (width >= 1101px) {
+  .c-arrow__button::before {
+    left: 8em;
+  }
+}
+
 .c-background-color__black {
   background: #000;
 }
@@ -467,6 +492,39 @@ img {
     width: 3.125rem;
   }
 }
+.p-button__point {
+  margin-top: 5rem;
+  text-align: center;
+}
+@media screen and (width >= 1101px) {
+  .p-button__point {
+    margin-top: 6.25rem;
+  }
+}
+.p-button__point a {
+  display: inline-block;
+  position: relative;
+  padding: 1.2em 5em 1.2em 8em;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  border: 0.0625rem solid #000;
+  border-radius: 6.25rem;
+  transition: all 0.3s ease;
+}
+@media screen and (width >= 1201px) {
+  .p-button__point a {
+    font-size: 1.25rem;
+    padding-left: 12em;
+    padding-right: 8em;
+  }
+}
+
+.p-button__point a:hover {
+  background: #f00;
+  border-color: #f00;
+  opacity: 1;
+}
+
 .p-footer__logo {
   display: inline-block;
   margin-bottom: 5vw;

@@ -37,3 +37,25 @@
     }
   }
 }
+
+// button 
+.c-arrow__button {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 2em;
+    transform: translateY(-50%) skewX(45deg);
+    height: .4em;
+    width: 1em;
+    border-right: g.rem(1) solid g.$color-black;
+    border-bottom: g.rem(1) solid g.$color-black;
+    @include g.tablet {
+      left: 5em;
+    }
+    @include g.pc {
+      left: 8em;
+    }
+  }
+}

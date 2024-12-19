@@ -1,1 +1,31 @@
 @use "../../foundation/global" as g;
+
+.p-button__point{
+  margin-top: g.rem(80);
+  text-align: center;
+  @include g.pc {
+    margin-top: g.rem(100);
+  }
+  & a {
+    display: inline-block;
+    position: relative;
+    padding: 1.2em 5em 1.2em 8em;
+    font-size: g.rem(20);
+    line-height: 1.4;
+    border: g.rem(1) solid g.$color-black;
+    border-radius: g.rem(100);
+    transition: all .3s ease;
+    @include g.l-pc {
+      font-size: g.rem(20);
+      padding-left: 12em;
+      padding-right: 8em;
+    }
+  }
+}
+
+// hover時
+.p-button__point a:hover {
+  background: g.$color-red;
+  border-color: g.$color-red;
+  opacity: 1;
+}
