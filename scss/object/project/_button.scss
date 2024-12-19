@@ -1,5 +1,14 @@
 @use "../../foundation/global" as g;
 
+// blogセクションのボタン
+.p-button__blog {
+  @extend .p-button__point;
+  margin-top: 8%;
+  @include g.tablet {
+    margin-top: g.rem(80);
+  }
+}
+// pointセクションのボタン
 .p-button__point{
   margin-top: g.rem(80);
   text-align: center;
@@ -9,12 +18,19 @@
   & a {
     display: inline-block;
     position: relative;
-    padding: 1.2em 5em 1.2em 8em;
-    font-size: g.rem(20);
+    width: g.tb-vw(692);
+    padding: 1.2em 2em 1.2em 4em;
+    font-size: g.tb-vw(27);
     line-height: 1.4;
     border: g.rem(1) solid g.$color-black;
     border-radius: g.rem(100);
     transition: all .3s ease;
+    @include g.tablet {
+      width: auto;
+      font-size: g.rem(18);
+      padding-left: 8em;
+      padding-right: 5em;
+    }
     @include g.l-pc {
       font-size: g.rem(20);
       padding-left: 12em;
@@ -24,8 +40,11 @@
 }
 
 // hover時
-.p-button__point a:hover {
-  background: g.$color-red;
-  border-color: g.$color-red;
-  opacity: 1;
+@media (any-hover: hover) {
+  .p-button__blog a:hover,
+  .p-button__point a:hover {
+    background: g.$color-red;
+    border-color: g.$color-red;
+    opacity: 1;
+  }
 }

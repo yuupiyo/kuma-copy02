@@ -492,39 +492,59 @@ img {
     width: 3.125rem;
   }
 }
-.p-button__point {
+.p-button__blog {
+  margin-top: 8%;
+}
+@media screen and (width >= 769px) {
+  .p-button__blog {
+    margin-top: 5rem;
+  }
+}
+
+.p-button__point, .p-button__blog {
   margin-top: 5rem;
   text-align: center;
 }
 @media screen and (width >= 1101px) {
-  .p-button__point {
+  .p-button__point, .p-button__blog {
     margin-top: 6.25rem;
   }
 }
-.p-button__point a {
+.p-button__point a, .p-button__blog a {
   display: inline-block;
   position: relative;
-  padding: 1.2em 5em 1.2em 8em;
-  font-size: 1.25rem;
+  width: 90.1041666667vw;
+  padding: 1.2em 2em 1.2em 4em;
+  font-size: 3.515625vw;
   line-height: 1.4;
   border: 0.0625rem solid #000;
   border-radius: 6.25rem;
   transition: all 0.3s ease;
 }
+@media screen and (width >= 769px) {
+  .p-button__point a, .p-button__blog a {
+    width: auto;
+    font-size: 1.125rem;
+    padding-left: 8em;
+    padding-right: 5em;
+  }
+}
 @media screen and (width >= 1201px) {
-  .p-button__point a {
+  .p-button__point a, .p-button__blog a {
     font-size: 1.25rem;
     padding-left: 12em;
     padding-right: 8em;
   }
 }
 
+@media (any-hover: hover) {
+  .p-button__blog a:hover,
 .p-button__point a:hover {
-  background: #f00;
-  border-color: #f00;
-  opacity: 1;
+    background: #f00;
+    border-color: #f00;
+    opacity: 1;
+  }
 }
-
 .p-footer__logo {
   display: inline-block;
   margin-bottom: 5vw;
