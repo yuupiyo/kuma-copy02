@@ -1,0 +1,14 @@
+@use "../../foundation/global" as g;
+
+.p-blog {
+  position: relative;
+  margin-top: 0;
+  padding-top: g.tb-vw(308);
+  @include g.tablet {
+    margin-top: g.rem(80);
+    padding: 0;
+  }
+  @include g.pc {
+    margin-top: g.rem(130);
+  }
+}
