@@ -627,7 +627,7 @@ img {
 }
 @media screen and (width >= 769px) {
   .p-blog__text-area {
-    flex-direction: column;
+    display: block;
     margin-left: 0;
   }
 }
@@ -683,6 +683,17 @@ img {
 .p-blog__sns li {
   display: inline-block;
   vertical-align: bottom;
+}
+
+.p-blog__list-date {
+  order: 2;
+  display: inline-block;
+  font-size: 2.6041666667vw;
+}
+@media screen and (width >= 769px) {
+  .p-blog__list-date {
+    font-size: 0.875rem;
+  }
 }
 
 .p-button__blog {

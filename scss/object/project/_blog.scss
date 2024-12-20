@@ -108,7 +108,7 @@
 .p-blog__text-area {
   margin-left: 5%;
   @include g.tablet {
-    flex-direction: column;
+    display: block;
     margin-left: 0;
   }
 }
@@ -156,5 +156,15 @@
   & li {
     display: inline-block;
     vertical-align: bottom;
+  }
+}
+
+// 日付
+.p-blog__list-date {
+  order: 2;
+  display: inline-block;
+  font-size: g.tb-vw(20);
+  @include g.tablet {
+    font-size: g.rem(14);
   }
 }
