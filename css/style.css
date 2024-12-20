@@ -604,6 +604,10 @@ img {
   }
 }
 
+.p-blog__image {
+  margin-bottom: 1.5em;
+}
+
 .p-button__blog {
   margin-top: 8%;
 }
