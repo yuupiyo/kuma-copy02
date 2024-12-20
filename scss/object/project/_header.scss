@@ -15,9 +15,18 @@
   }
 }
 
+// title
+.p-header__titlearea {
+  position: relative;
+  width: 100%;
+  height: g.rem(60);
+  padding: 0;
+  background: transparent;
+  z-index: 999;
+}
+
 // ナビゲーション
 .p-header__nav {
-  @include g.tablet {
     position: fixed;
     top: g.rem(60);
     left: 0;
@@ -29,5 +38,10 @@
     overflow-y: auto;
     z-index: 998;
     transition: transform .3s, opacity 1s;
-  }
+    @include g.tablet {
+      position: static;
+      transform: translateY(0);
+      width: auto;
+      opacity: 1;
+    }
 }
