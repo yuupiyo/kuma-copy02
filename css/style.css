@@ -894,6 +894,12 @@ img {
   background: transparent;
   z-index: 999;
 }
+@media screen and (width >= 769px) {
+  .p-header__titlearea {
+    flex-grow: 1;
+    height: 11.25rem;
+  }
+}
 
 .p-header__nav {
   position: fixed;

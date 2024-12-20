@@ -24,6 +24,10 @@
   padding: 0;
   background: transparent;
   z-index: 999;
+  @include g.tablet {
+    flex-grow: 1;
+    height: g.rem(180);
+  }
 }
 
 // ナビゲーション
