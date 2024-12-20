@@ -705,6 +705,15 @@ img {
   }
 }
 
+@media (any-hover: hover) {
+  .p-blog__list-item a {
+    transition: all 0.3 ease;
+  }
+  .p-blog__list-item a:hover {
+    opacity: 0.6;
+    cursor: pointer;
+  }
+}
 .p-button__blog {
   margin-top: 8%;
 }
