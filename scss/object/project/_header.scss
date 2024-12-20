@@ -2,7 +2,7 @@
 
 .p-header {
   width: 30%;
-  margin: g.rem(30) 0;
+  margin: g.rem(30) auto;
   padding: 0;
   background-color: transparent;
   z-index: 999;
@@ -11,7 +11,8 @@
     z-index: 1000;
   }
   @include g.l-pc {
-    margin: g.rem(50) 0;
+    margin: g.rem(50) auto;
+    padding: 0 g.rem(60);
   }
 }
 
