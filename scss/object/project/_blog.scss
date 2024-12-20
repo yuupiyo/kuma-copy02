@@ -142,16 +142,19 @@
 // snsアイコン
 .p-blog__sns {
   order: 3;
+  display: inline-block;
   margin: .5em 1em .5em 0;
+  font-size: g.tb-vw(27);
   @include g.tablet {
-    display: inline-block;
     order: unset;
+    display: block;
+    font-size: g.rem(14);
+  }
+  @include g.pc {
+    display: inline-block;
   }
   & li {
-    margin-right: .2em;
-    @include g.tablet {
-      display: inline-block;
-      margin-right: 0;
-    }
+    display: inline-block;
+    vertical-align: bottom;
   }
 }

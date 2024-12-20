@@ -664,22 +664,25 @@ img {
 
 .p-blog__sns {
   order: 3;
+  display: inline-block;
   margin: 0.5em 1em 0.5em 0;
+  font-size: 3.515625vw;
 }
 @media screen and (width >= 769px) {
   .p-blog__sns {
-    display: inline-block;
     order: unset;
+    display: block;
+    font-size: 0.875rem;
+  }
+}
+@media screen and (width >= 1101px) {
+  .p-blog__sns {
+    display: inline-block;
   }
 }
 .p-blog__sns li {
-  margin-right: 0.2em;
-}
-@media screen and (width >= 769px) {
-  .p-blog__sns li {
-    display: inline-block;
-    margin-right: 0;
-  }
+  display: inline-block;
+  vertical-align: bottom;
 }
 
 .p-button__blog {
