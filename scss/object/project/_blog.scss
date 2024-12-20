@@ -52,3 +52,36 @@
     padding-bottom: g.rem(80);
   }
 }
+.p-blog__list-item {
+  @include g.tablet {
+    display: block;
+  }
+  &:nth-child(1) {
+    width: 100%;
+    padding-top: 0;
+    @include g.tablet {
+      width: 45%;
+      padding-top: g.rem(40);
+    }
+  }
+  &:nth-child(2) {
+    position: static;
+    width: 100%;
+    @include g.tablet {
+      position: absolute;
+      bottom: 0;
+      left: 40%;
+      width: 29%;
+    }
+  }
+  &:nth-child(3) {
+    position: static;
+    width: 100%;
+    @include g.tablet {
+      position: absolute;
+      top: g.rem(120);
+      right: 0;
+      width: 29%;
+    }
+  }
+}
