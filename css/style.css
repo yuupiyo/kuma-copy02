@@ -605,7 +605,12 @@ img {
 }
 
 .p-blog__image {
-  margin-bottom: 1.5em;
+  margin-bottom: 2.5em;
+}
+@media screen and (width >= 769px) {
+  .p-blog__image {
+    margin-bottom: 1.31em;
+  }
 }
 .p-blog__image img {
   width: 100%;
@@ -655,6 +660,19 @@ img {
   .p-blog__list-item:nth-child(1) .p-blog__list-title {
     padding-right: 7.5rem;
   }
+}
+
+.p-blog__sns {
+  order: 3;
+  margin: 0.5em 1em 0.5em 0;
+}
+@media screen and (width >= 769px) {
+  .p-blog__sns {
+    order: unset;
+  }
+}
+.p-blog__sns li {
+  margin-right: 0.2em;
 }
 
 .p-button__blog {
