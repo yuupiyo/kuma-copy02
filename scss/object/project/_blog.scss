@@ -144,9 +144,14 @@
   order: 3;
   margin: .5em 1em .5em 0;
   @include g.tablet {
+    display: inline-block;
     order: unset;
   }
   & li {
     margin-right: .2em;
+    @include g.tablet {
+      display: inline-block;
+      margin-right: 0;
+    }
   }
 }

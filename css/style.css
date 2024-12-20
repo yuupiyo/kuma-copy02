@@ -668,11 +668,18 @@ img {
 }
 @media screen and (width >= 769px) {
   .p-blog__sns {
+    display: inline-block;
     order: unset;
   }
 }
 .p-blog__sns li {
   margin-right: 0.2em;
+}
+@media screen and (width >= 769px) {
+  .p-blog__sns li {
+    display: inline-block;
+    margin-right: 0;
+  }
 }
 
 .p-button__blog {
