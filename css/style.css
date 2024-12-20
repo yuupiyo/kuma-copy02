@@ -25,6 +25,10 @@ img {
   overflow: hidden;
 }
 
+.l-header {
+  position: relative;
+}
+
 .l-wrapper {
   background: url(/img/common/bg.webp) center repeat-y;
 }
@@ -246,7 +250,7 @@ img {
   font-style: normal;
 }
 
-.c-inner, .c-inner__max1270, .c-inner__max1100, .c-inner__max990, .c-inner__max970, .c-inner__point {
+.c-inner, .c-inner__max90per, .c-inner__max1270, .c-inner__max1100, .c-inner__max990, .c-inner__max970, .c-inner__point {
   max-width: 1200px;
   width: 90%;
   margin-inline: auto;
@@ -281,6 +285,11 @@ img {
 
 .c-inner__max1270 {
   max-width: 1270px;
+}
+
+.c-inner__max90per {
+  max-width: 90%;
+  width: 100%;
 }
 
 .c-pointnumber {
@@ -832,6 +841,10 @@ img {
     opacity: 0.6;
   }
 }
+.p-header {
+  padding: 0 3.75rem;
+}
+
 .p-pagetop {
   display: inline-block;
   position: absolute;

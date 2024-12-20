@@ -1,1 +1,5 @@
 @use "../../foundation/global" as g;
+
+.p-header {
+  padding: 0 g.rem(60);
+}

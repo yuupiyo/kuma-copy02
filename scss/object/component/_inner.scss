@@ -32,3 +32,8 @@
   @extend .c-inner;
   max-width: 1270px;
 }
+.c-inner__max90per {
+  @extend .c-inner;
+  max-width: 90%;
+  width: 100%;
+}
