@@ -1,5 +1,33 @@
 @use "../../foundation/global" as g;
 
 .p-header {
-  padding: 0 g.rem(60);
+  width: 30%;
+  margin: g.rem(30) 0;
+  padding: 0;
+  background-color: transparent;
+  z-index: 999;
+  @include g.tablet {
+    width: 100%;
+    z-index: 1000;
+  }
+  @include g.l-pc {
+    margin: g.rem(50) 0;
+  }
+}
+
+// ナビゲーション
+.p-header__nav {
+  @include g.tablet {
+    position: fixed;
+    top: g.rem(60);
+    left: 0;
+    transform: translateY(-100%);
+    width: 100%;
+    max-height: calc(100% - g.rem(60));
+    padding: 0;
+    opacity: 0;
+    overflow-y: auto;
+    z-index: 998;
+    transition: transform .3s, opacity 1s;
+  }
 }

@@ -1,6 +1,12 @@
 @use "../../foundation/global" as g;
 
 // 中の要素ごと消したい時
+.c-display__sponly {
+  display: block;
+  @include g.tablet {
+    display: none;
+  }
+}
 .c-display__pconly {
   display: none;
   @include g.tablet {

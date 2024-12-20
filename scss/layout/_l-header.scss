@@ -1,5 +1,10 @@
 @use "../foundation/global" as g;
 
 .l-header {
-  position: relative;
+  position: fixed;
+  top: 0;
+  right: 0;
+  @include g.tablet {
+    position: relative;
+  }
 }
