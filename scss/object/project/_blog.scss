@@ -89,6 +89,23 @@
   }
 }
 
+// イメージ画像
 .p-blog__image {
   margin-bottom: 1.5em;
+  & img {
+    width: 100%;
+    border-radius: g.rem(6);
+    @include g.tablet {
+      border-radius: g.rem(15);
+    }
+  }
+}
+
+// テキスト部分
+.p-blog__text-area {
+  margin-left: 5%;
+  @include g.tablet {
+    flex-direction: column;
+    margin-left: 0;
+  }
 }
