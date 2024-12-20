@@ -551,6 +551,16 @@ img {
   }
 }
 
+.p-blog__list {
+  position: relative;
+  padding-bottom: 0;
+}
+@media screen and (width >= 769px) {
+  .p-blog__list {
+    padding-bottom: 5rem;
+  }
+}
+
 .p-button__blog {
   margin-top: 8%;
 }

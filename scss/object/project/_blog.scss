@@ -43,3 +43,12 @@
     }
   }
 }
+
+// list
+.p-blog__list {
+  position: relative;
+  padding-bottom: 0;
+  @include g.tablet {
+    padding-bottom: g.rem(80);
+  }
+}
