@@ -627,6 +627,36 @@ img {
   }
 }
 
+.p-blog__list-title {
+  margin-bottom: 0;
+  font-size: 3.125vw;
+}
+@media screen and (width >= 769px) {
+  .p-blog__list-title {
+    margin-bottom: 1em;
+    font-size: 1rem;
+  }
+}
+@media screen and (width >= 1101px) {
+  .p-blog__list-title {
+    font-size: 1.25rem;
+  }
+}
+
+.p-blog__list-item:nth-child(1) .p-blog__list-title {
+  padding-right: 0;
+}
+@media screen and (width >= 769px) {
+  .p-blog__list-item:nth-child(1) .p-blog__list-title {
+    padding-right: 5rem;
+  }
+}
+@media screen and (width >= 1101px) {
+  .p-blog__list-item:nth-child(1) .p-blog__list-title {
+    padding-right: 7.5rem;
+  }
+}
+
 .p-button__blog {
   margin-top: 8%;
 }

@@ -109,3 +109,29 @@
     margin-left: 0;
   }
 }
+
+// リストのタイトル部分
+// 共通スタイル
+.p-blog__list-title {
+  margin-bottom: 0;
+  font-size: g.tb-vw(24);
+  @include g.tablet {
+    margin-bottom: 1em;
+    font-size: g.rem(16);
+  }
+  @include g.pc {
+    font-size: g.rem(20);
+  }
+}
+// 個別スタイル
+.p-blog__list-item:nth-child(1) {
+  & .p-blog__list-title {
+    padding-right: 0;
+    @include g.tablet {
+      padding-right: g.rem(80);
+    }
+    @include g.pc {
+      padding-right: g.rem(120);
+    }
+  }
+}
