@@ -561,6 +561,9 @@ img {
   }
 }
 
+.p-blog__list-item > * {
+  flex: 1;
+}
 @media screen and (width >= 769px) {
   .p-blog__list-item {
     display: block;

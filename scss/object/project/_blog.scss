@@ -53,6 +53,9 @@
   }
 }
 .p-blog__list-item {
+  & > * {
+    flex: 1;
+  }
   @include g.tablet {
     display: block;
   }
