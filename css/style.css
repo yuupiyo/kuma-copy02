@@ -974,6 +974,22 @@ img {
   }
 }
 
+.p-hero__image02 {
+  display: block;
+  position: absolute;
+  width: 60%;
+  bottom: 12%;
+  left: 52%;
+  transition: all 0.4s ease;
+}
+@media screen and (width >= 769px) {
+  .p-hero__image02 {
+    width: 25%;
+    bottom: 2.2%;
+    left: 15.8%;
+  }
+}
+
 .p-pagetop {
   display: inline-block;
   position: absolute;

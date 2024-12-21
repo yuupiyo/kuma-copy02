@@ -33,3 +33,18 @@
     }
   }
 }
+
+// 一番小さい画像
+.p-hero__image02 {
+  display: block;
+  position: absolute;
+  width: 60%;
+  bottom: 12%;
+  left: 52%;
+  transition: all .4s ease;
+  @include g.tablet {
+    width: 25%;
+    bottom: 2.2%;
+    left: 15.8%;
+  }
+}
