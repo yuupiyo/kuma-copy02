@@ -966,6 +966,7 @@ img {
   }
 }
 .p-hero__image01 img {
+  display: inline;
   width: 100%;
 }
 @media screen and (width >= 769px) {
@@ -987,6 +988,22 @@ img {
     width: 25%;
     bottom: 2.2%;
     left: 15.8%;
+  }
+}
+
+.p-hero__image03 {
+  display: block;
+  position: absolute;
+  width: 70%;
+  bottom: 0;
+  left: -10%;
+  transition: all 0.4s ease;
+}
+@media screen and (width >= 769px) {
+  .p-hero__image03 {
+    width: 30%;
+    bottom: 12%;
+    left: -3%;
   }
 }
 
