@@ -80,3 +80,16 @@
     font-size: g.pc-vw(22);
   }
 }
+
+// logo
+.p-hero__logo {
+  position: absolute;
+  width: 25%;
+  top: g.tb-vw(38.4);
+  left: 5%;
+  @include g.tablet {
+    width: 10%;
+    top: 8%;
+    left: 10%;
+  }
+}

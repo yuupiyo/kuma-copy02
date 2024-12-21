@@ -1024,6 +1024,20 @@ img {
   }
 }
 
+.p-hero__logo {
+  position: absolute;
+  width: 25%;
+  top: 5vw;
+  left: 5%;
+}
+@media screen and (width >= 769px) {
+  .p-hero__logo {
+    width: 10%;
+    top: 8%;
+    left: 10%;
+  }
+}
+
 .p-pagetop {
   display: inline-block;
   position: absolute;
