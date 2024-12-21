@@ -1,2 +1,14 @@
 
 @use "../../foundation/global" as g;
+
+.p-hero {
+  position: relative;
+  height: g.tb-vw(1228.8);
+  margin-bottom: g.tb-vw(-153.6);
+  overflow: hidden;
+  @include g.tablet {
+    height: auto;
+    margin-bottom: 0;
+    overflow: auto;
+  }
+}

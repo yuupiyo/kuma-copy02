@@ -936,6 +936,20 @@ img {
   }
 }
 
+.p-hero {
+  position: relative;
+  height: 160vw;
+  margin-bottom: -20vw;
+  overflow: hidden;
+}
+@media screen and (width >= 769px) {
+  .p-hero {
+    height: auto;
+    margin-bottom: 0;
+    overflow: auto;
+  }
+}
+
 .p-pagetop {
   display: inline-block;
   position: absolute;
