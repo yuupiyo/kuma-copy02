@@ -1,0 +1,9 @@
+@use "../foundation/global" as g;
+
+.l-main {
+  padding-top: g.rem(60);
+  overflow: hidden;
+  @include g.tablet {
+    padding-top: 0;
+  }
+}

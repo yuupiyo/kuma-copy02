@@ -36,6 +36,16 @@ img {
   }
 }
 
+.l-main {
+  padding-top: 3.75rem;
+  overflow: hidden;
+}
+@media screen and (width >= 769px) {
+  .l-main {
+    padding-top: 0;
+  }
+}
+
 .l-wrapper {
   background: url(/img/common/bg.webp) center repeat-y;
 }
