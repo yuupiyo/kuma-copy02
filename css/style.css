@@ -1007,6 +1007,23 @@ img {
   }
 }
 
+.p-hero__catch {
+  position: absolute;
+  top: 18%;
+  left: 5%;
+  transform: rotate(-10deg);
+  font-size: 5vw;
+  letter-spacing: 0.3em;
+  transition: all 0.4s ease;
+}
+@media screen and (width >= 769px) {
+  .p-hero__catch {
+    top: 40%;
+    left: 38%;
+    font-size: 1.8333333333vw;
+  }
+}
+
 .p-pagetop {
   display: inline-block;
   position: absolute;
