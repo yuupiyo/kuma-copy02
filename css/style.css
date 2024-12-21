@@ -1038,6 +1038,52 @@ img {
   }
 }
 
+.p-hero__banner {
+  position: absolute;
+  bottom: 14vw;
+  left: 50%;
+  right: auto;
+  transform: translateX(-50%);
+  max-width: 70.0520833333vw;
+  width: 100%;
+  height: auto;
+  z-index: 11;
+  transition: 0.3s;
+}
+@media screen and (width >= 769px) {
+  .p-hero__banner {
+    bottom: 2.2rem;
+    left: unset;
+    right: 2.5rem;
+    transform: translateX(0);
+    max-width: 34.4rem;
+    width: 25%;
+  }
+}
+
+.p-hero__banner-inner {
+  position: relative;
+}
+.p-hero__banner-inner a {
+  display: block;
+}
+
+.p-hero__banner--close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 2.4rem;
+  width: 7%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+@media screen and (width >= 769px) {
+  .p-hero__banner--close {
+    top: 1.5%;
+    right: 0.8%;
+  }
+}
+
 .p-pagetop {
   display: inline-block;
   position: absolute;
