@@ -29,6 +29,16 @@
     height: g.rem(180);
   }
 }
+.p-header__title {
+  position: absolute;
+  left: g.tb-vw(24);
+  height: 50%;
+  @include g.tablet {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+}
 
 // ナビゲーション
 .p-header__nav {

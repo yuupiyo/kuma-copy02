@@ -901,6 +901,19 @@ img {
   }
 }
 
+.p-header__title {
+  position: absolute;
+  left: 3.125vw;
+  height: 50%;
+}
+@media screen and (width >= 769px) {
+  .p-header__title {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+}
+
 .p-header__nav {
   position: fixed;
   top: 3.75rem;
