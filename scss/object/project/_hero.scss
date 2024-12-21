@@ -12,3 +12,24 @@
     overflow: auto;
   }
 }
+
+// 右の大きな画像
+.p-hero__image01 {
+  display: block;
+  width: 135%;
+  margin-left: -8%;
+  margin-top: -5%;
+  text-align: right;
+  transition-delay: .6s;
+  transition: all .4s ease;
+  @include g.tablet {
+    width: auto;
+    margin: 0;
+  }
+  & img {
+    width: 100%;
+    @include g.tablet {
+      width: 80%;
+    }
+  }
+}
