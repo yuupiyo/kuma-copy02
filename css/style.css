@@ -1062,11 +1062,11 @@ img {
 }
 @media screen and (width >= 769px) {
   .p-hero__banner {
-    bottom: 2.2rem;
+    bottom: 1.375rem;
     left: unset;
-    right: 2.5rem;
+    right: 1.5625rem;
     transform: translateX(0);
-    max-width: 34.4rem;
+    max-width: 21.5rem;
     width: 25%;
   }
 }
@@ -1082,7 +1082,7 @@ img {
   position: absolute;
   top: 0;
   right: 0;
-  max-width: 2.4rem;
+  max-width: 1.5rem;
   width: 7%;
   cursor: pointer;
   transition: 0.3s;
@@ -1090,7 +1090,7 @@ img {
 @media screen and (width >= 769px) {
   .p-hero__banner--close {
     top: 1.5%;
-    right: 0.8%;
+    right: 0.6%;
   }
 }
 

@@ -107,11 +107,11 @@
   z-index: 11;
   transition: 0.3s;
   @include g.tablet {
-    bottom: 2.2rem;
+    bottom: g.rem(22);
     left: unset;
-    right: 2.5rem;
+    right: g.rem(25);
     transform: translateX(0);
-    max-width: 34.4rem;
+    max-width: g.rem(344);
     width: 25%;
   }
 }
@@ -126,12 +126,12 @@
   position: absolute;
   top: 0;
   right: 0;
-  max-width: 2.4rem;
+  max-width: g.rem(24);
   width: 7%;
   cursor: pointer;
   transition: 0.3s;
   @include g.tablet {
     top: 1.5%;
-    right: 0.8%;
+    right: 0.6%;
   }
 }
