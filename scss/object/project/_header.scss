@@ -40,6 +40,36 @@
   }
 }
 
+// ハンバーガーボタン
+.p-header__button {
+  display: block;
+  position: fixed;
+  top: g.rem(15);
+  right: g.tb-vw(24);
+  width: g.rem(30);
+  height: g.rem(30);
+  z-index: 999;
+  & span {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: g.rem(2);
+    background-color: g.$color-black;
+    transition: all .4s;
+  }
+  & span:nth-of-type(1) {
+    top: 15%;
+  }
+  & span:nth-of-type(2) {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  & span:nth-of-type(3) {
+    bottom: 15%;
+  }
+}
+
 // ナビゲーション
 .p-header__nav-list {
   justify-content: right;
