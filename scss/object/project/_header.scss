@@ -64,7 +64,25 @@
 // snsアイコン
 .p-header__sns {
   flex-shrink: 0;
+  & a::before {
+    content: none;
+  }
   & svg {
     vertical-align: baseline;
+  }
+}
+
+// hover時
+@media (any-hover: hover) {
+  .p-header__title a:hover,
+  .p-header__nav-list a:hover {
+    color: g.$color-red;
+    opacity: 1;
+  }
+  .p-header__nav-list a:hover::before {
+    width: 100%;
+  }
+  .p-header__sns a:hover svg {
+    fill: g.$color-red;
   }
 }

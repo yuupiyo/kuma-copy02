@@ -938,10 +938,26 @@ img {
 .p-header__sns {
   flex-shrink: 0;
 }
+.p-header__sns a::before {
+  content: none;
+}
 .p-header__sns svg {
   vertical-align: baseline;
 }
 
+@media (any-hover: hover) {
+  .p-header__title a:hover,
+.p-header__nav-list a:hover {
+    color: #f00;
+    opacity: 1;
+  }
+  .p-header__nav-list a:hover::before {
+    width: 100%;
+  }
+  .p-header__sns a:hover svg {
+    fill: #f00;
+  }
+}
 .p-hero {
   position: relative;
   height: 160vw;
