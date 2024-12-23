@@ -1,62 +1,70 @@
 @use "../../foundation/global" as g;
 
 .p-header {
-  width: 30%;
-  margin: g.rem(30) auto;
-  padding: 0;
-  background-color: transparent;
-  z-index: 999;
-  @include g.tablet {
-    width: 100%;
-    z-index: 1000;
-  }
-  @include g.l-pc {
-    margin: g.rem(50) auto;
-    padding: 0 g.rem(60);
-  }
+  position: relative;
+  width: 100%;
+  margin: g.rem(50) 0;
+  z-index: 1000;
+}
+
+// headerタグ直下のinner
+.p-header__inner {
+  padding: 0 g.rem(60);
 }
 
 // title
 .p-header__titlearea {
-  position: relative;
-  width: 100%;
-  height: g.rem(60);
-  padding: 0;
-  background: transparent;
-  z-index: 999;
-  @include g.tablet {
-    flex-grow: 1;
-    height: g.rem(180);
-  }
+  flex-grow: 1;
+  height: g.rem(180);
 }
 .p-header__title {
-  position: absolute;
-  left: g.tb-vw(24);
-  height: 50%;
-  @include g.tablet {
-    display: flex;
-    align-items: center;
-    height: 100%;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  & a {
+    padding-right: 1em;
+    font-size: g.rem(18);
+    line-height: 2;
+    border-right: g.rem(1) solid g.$color-black;
+    transition: all .3s ease;
   }
 }
 
 // ナビゲーション
-.p-header__nav {
-    position: fixed;
-    top: g.rem(60);
-    left: 0;
-    transform: translateY(-100%);
-    width: 100%;
-    max-height: calc(100% - g.rem(60));
-    padding: 0;
-    opacity: 0;
-    overflow-y: auto;
-    z-index: 998;
-    transition: transform .3s, opacity 1s;
-    @include g.tablet {
-      position: static;
-      transform: translateY(0);
-      width: auto;
-      opacity: 1;
-    }
+.p-header__nav-list {
+  justify-content: right;
+  align-items: center;
+  height: g.rem(180);
+  & li {
+    line-height: 1.8;
+  }
+  & > li + li {
+    margin-left: g.rem(30);
+  }
+  & a {
+    display: block;
+    position: relative;
+    font-size: g.rem(18);
+    letter-spacing: .1em;
+    transition: all .3s ease;
+  }
+  & a::before {
+    content: '';
+    position: absolute;
+    top: 105%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: g.rem(1);
+    background: g.$color-red;
+    transition: all .3s ease;
+  }
+}
+
+// snsアイコン
+.p-header__sns {
+  flex-shrink: 0;
+  & svg {
+    vertical-align: baseline;
+  }
 }
