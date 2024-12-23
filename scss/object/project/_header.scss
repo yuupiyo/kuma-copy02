@@ -3,13 +3,19 @@
 .p-header {
   position: relative;
   width: 100%;
-  margin: g.rem(50) 0;
+  margin: g.rem(30) 0;
   z-index: 1000;
+  @include g.l-pc {
+    margin: g.rem(50) 0;
+  }
 }
 
 // headerタグ直下のinner
 .p-header__inner {
-  padding: 0 g.rem(60);
+  padding: 0;
+  @include g.l-pc {
+    padding: 0 g.rem(60);
+  }
 }
 
 // title
@@ -22,11 +28,15 @@
   align-items: center;
   height: 100%;
   & a {
+    display: none;
     padding-right: 1em;
     font-size: g.rem(18);
     line-height: 2;
     border-right: g.rem(1) solid g.$color-black;
     transition: all .3s ease;
+    @include g.l-pc {
+      display: block;
+    }
   }
 }
 
@@ -39,14 +49,20 @@
     line-height: 1.8;
   }
   & > li + li {
-    margin-left: g.rem(30);
+    margin-left: g.rem(20);
+    @include g.l-pc {
+      margin-left: g.rem(30);
+    }
   }
   & a {
     display: block;
     position: relative;
-    font-size: g.rem(18);
+    font-size: g.rem(17);
     letter-spacing: .1em;
     transition: all .3s ease;
+    @include g.l-pc {
+      font-size: g.rem(18);
+    }
   }
   & a::before {
     content: '';
