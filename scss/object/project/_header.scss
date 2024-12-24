@@ -1,10 +1,20 @@
 @use "../../foundation/global" as g;
 
 .p-header {
-  position: relative;
-  width: 100%;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 0;
+  width: 30%;
+  height: g.rem(60);
   margin: g.rem(30) 0;
-  z-index: 1000;
+  z-index: 999;
+  @include g.tablet {
+    position: relative;
+    width: 100%;  
+    z-index: 1000;
+  }
   @include g.l-pc {
     margin: g.rem(50) 0;
   }
@@ -12,7 +22,17 @@
 
 // headerタグ直下のinner
 .p-header__inner {
-  padding: 0;
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: g.rem(60);
+  background: rgba(255, 255, 255, 0.9);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 997;
+  transition: all 0.3s ease;
   @include g.l-pc {
     padding: 0 g.rem(60);
   }
