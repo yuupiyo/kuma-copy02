@@ -1,10 +1,10 @@
 // loading
-// window.addEventListener('load', function() {
-//   const loadingElement = document.querySelector('.js-loading');
-//   if (loadingElement) {
-//       loadingElement.style.display = 'none';
-//   }
-// });
+window.addEventListener('load', function() {
+  const loadingElement = document.querySelector('.js-loading');
+  if (loadingElement) {
+      loadingElement.style.display = 'none';
+  }
+});
 
 // header-menu
 document.addEventListener('DOMContentLoaded', function () {
@@ -59,4 +59,34 @@ document.addEventListener('DOMContentLoaded', function () {
 
   window.addEventListener('load', handleResize);
   window.addEventListener('resize', handleResize);
+});
+
+// スクロールアニメーション
+// スクロールイベントで要素を表示する関数
+const scrollShow = function () {
+  const elements = document.querySelectorAll('[data-scroll]');
+  const windowHeight = window.innerHeight;
+
+  elements.forEach(function (element) {
+      const pos = element.getBoundingClientRect().top + window.scrollY; // 要素の位置
+      const scroll = window.scrollY; // スクロール位置
+
+      if (scroll > pos - windowHeight + windowHeight / 5) {
+          element.classList.add('scroll-show');
+      } else {
+          element.classList.remove('scroll-show');
+      }
+  });
+};
+
+// スクロールイベントにリスナーを追加
+window.addEventListener('scroll', scrollShow);
+
+// ページロード時の初期化処理
+window.addEventListener('load', function () {
+  scrollShow(); // 初期スクロールチェック
+  const onloadElements = document.querySelectorAll('.onload-show');
+  onloadElements.forEach(function (element) {
+      element.classList.add('scroll-show'); // ロード時にクラスを付与
+  });
 });
