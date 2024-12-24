@@ -104,7 +104,7 @@
   }
 }
 // open時
-.p-header.is-open .p-header__button {
+header.is-open .p-header__button {
   & span:nth-of-type(1) {
     top: 50%;
     transform: translateY(-50%) rotate(-45deg);
@@ -139,7 +139,7 @@
   }
 }
 // sp時headerにis-openがついた時
-.p-header.is-open .p-header__nav {
+header.is-open .p-header__nav {
   opacity: 1;
   transform: translateY(0);
   transition: transform .3s, opacity 0s;
