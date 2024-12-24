@@ -990,15 +990,27 @@ img {
   bottom: 15%;
 }
 
+.p-header.is-open .p-header__button span:nth-of-type(1) {
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+}
+.p-header.is-open .p-header__button span:nth-of-type(2) {
+  opacity: 0;
+}
+.p-header.is-open .p-header__button span:nth-of-type(3) {
+  bottom: 50%;
+  transform: translateY(50%) rotate(45deg);
+}
+
 .p-header__nav {
   position: fixed;
   top: 3.75rem;
   left: 0;
-  transform: translateY(0);
+  transform: translateY(-100%);
   width: 100%;
   max-height: calc(100% - 3.75rem);
   padding: 0;
-  opacity: 1;
+  opacity: 0;
   overflow-y: auto;
   z-index: 998;
   transition: tall 0.3s, opacity 1s;
@@ -1007,7 +1019,15 @@ img {
   .p-header__nav {
     position: static;
     width: auto;
+    transform: translateY(0);
+    opacity: 1;
   }
+}
+
+.p-header.is-open .p-header__nav {
+  opacity: 1;
+  transform: translateY(0);
+  transition: transform 0.3s, opacity 0s;
 }
 
 .p-header__nav-inner {
@@ -1124,6 +1144,7 @@ img {
 }
 .p-header__sns svg {
   vertical-align: baseline;
+  transition: all 0.3s ease;
 }
 
 .p-header__overlay {
@@ -1138,6 +1159,10 @@ img {
   pointer-events: none;
   z-index: 997;
   transition: all 0.3s ease;
+}
+.p-header__overlay.is-active {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 @media (any-hover: hover) {
