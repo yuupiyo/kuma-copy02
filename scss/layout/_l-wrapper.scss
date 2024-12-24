@@ -2,5 +2,15 @@
 
 // サイト全体の背景画像
 .l-wrapper {
-  background: url(/img/common/bg.webp) center repeat-y;
+  min-width: inherit;
+  background: url(../../img/common/bg_sp@2x.png) repeat-y top g.tb-vw(-231) center / 120% auto;
+  @include g.tablet {
+    background-image: url(../../img/common/bg.webp);
+    background-position: top g.s-pc-vw(-103) center;
+    background-size: 150% auto;
+  }
+  @include g.s-pc {
+    background-position: top g.rem(-250) center;
+    background-size: auto;
+  }
 }
