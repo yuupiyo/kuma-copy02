@@ -28,6 +28,7 @@
 }
 .p-performance__title-bg {
   display: inline-block;
+  max-width: 0;
   margin: .1em 0;
   font-size: g.tb-vw(38.4);
   line-height: 1.8;
@@ -44,9 +45,27 @@
 }
 .p-performance__title-text {
   margin-left: .5em;
+  opacity: 0;
   transition: opacity .5s ease;
 }
-
+// スクロールアニメーション
+.p-performance__title.scroll-show{
+  & .p-performance__title-bg {
+    max-width: 21em;
+    opacity: 1;
+  }
+  & .p-performance__title-bg:nth-child(3) {
+    transition-delay: .8s;
+  }
+  & .p-performance__title-bg:nth-child(3) .p-performance__title-text {
+    transition-delay: 1s;
+  }
+  & .p-performance__title-text {
+    opacity: 1;
+    transition-delay: .2s;
+  }
+}
+  
 
 .p-performance__list {
   padding: g.tb-vw(23) 0;

@@ -1,0 +1,38 @@
+*[data-scroll='fade-top'] {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity .6s, transform .6s;
+}
+*[data-scroll='fade-right'] {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: opacity .6s, transform .6s;
+}
+*[data-scroll='fade-left'] {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: opacity .6s, transform .6s;
+}
+@media screen and (width >= 769px) {
+  *:not([data-scroll=""]).delay1 {
+    transition-delay: .3s;
+  }
+  *:not([data-scroll=""]).delay2 {
+    transition-delay: .6s;
+  }
+  *:not([data-scroll=""]).delay3 {
+    transition-delay: .9s;
+  }
+  *:not([data-scroll=""]).delay4 {
+    transition-delay: 1.2s;
+  } 
+}
+
+*[data-scroll='fade-top'].scroll-show, *[data-scroll='fade-bottom'].scroll-show {
+  opacity: 1;
+  transform: translateY(0);
+}
+*[data-scroll='fade-left'].scroll-show, *[data-scroll='fade-right'].scroll-show {
+  opacity: 1;
+  transform: translateX(0);
+}
