@@ -107,15 +107,29 @@
     @include g.pc {
       padding-bottom: g.rem(50);
     }
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 100%;
+      background: g.$color-black;
+      transition: opacity .3s ease;
+      opacity: 0;
+    }
   }
 
   & .p-point__list-number {
     border-color: g.$color-white;
+    z-index: 1;
     }
 
   & .p-point__list-catch {
     font-size: g.tb-vw(30);
     color: g.$color-white;
+    z-index: 1;
     transition: all .3s ease;
     @include g.tablet {
       font-size: g.pc-vw(22);
@@ -508,6 +522,9 @@
   .p-point__list-item01 a:hover {
     border-color: g.$color-red;
     opacity: 1;
+    &::before {
+      opacity: 0.4;
+    }
     & .p-point__list-number,
     & .p-point__list-catch {
       color: g.$color-red;

@@ -1885,12 +1885,26 @@ header.is-open .p-header__nav {
     padding-bottom: 3.125rem;
   }
 }
+.p-point__list-item01 a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background: #000;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
 .p-point__list-item01 .p-point__list-number {
   border-color: #fff;
+  z-index: 1;
 }
 .p-point__list-item01 .p-point__list-catch {
   font-size: 3.90625vw;
   color: #fff;
+  z-index: 1;
   transition: all 0.3s ease;
 }
 @media screen and (width >= 769px) {
@@ -2368,6 +2382,9 @@ header.is-open .p-header__nav {
   .p-point__list-item01 a:hover {
     border-color: #f00;
     opacity: 1;
+  }
+  .p-point__list-item01 a:hover::before {
+    opacity: 0.4;
   }
   .p-point__list-item01 a:hover .p-point__list-number, .p-point__list-item01 a:hover .p-point__list-catch {
     color: #f00;
