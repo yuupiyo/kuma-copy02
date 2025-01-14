@@ -1254,8 +1254,8 @@ header.is-open .p-header__nav {
   margin-top: -5%;
   text-align: right;
   opacity: 0;
-  transition-delay: 0.6s;
   transition: all 0.4s ease;
+  transition-delay: 0.6s;
 }
 @media screen and (width >= 769px) {
   .p-hero__image01 {
@@ -1280,8 +1280,8 @@ header.is-open .p-header__nav {
   bottom: 12%;
   left: 52%;
   opacity: 0;
-  transition-delay: 1s;
   transition: all 0.4s ease;
+  transition-delay: 1s;
 }
 @media screen and (width >= 769px) {
   .p-hero__image02 {
@@ -1298,8 +1298,8 @@ header.is-open .p-header__nav {
   bottom: 0;
   left: -10%;
   opacity: 0;
-  transition-delay: 1.4s;
   transition: all 0.4s ease;
+  transition-delay: 1.4s;
 }
 @media screen and (width >= 769px) {
   .p-hero__image03 {
@@ -1317,8 +1317,8 @@ header.is-open .p-header__nav {
   font-size: 5vw;
   letter-spacing: 0.3em;
   opacity: 0;
-  transition-delay: 1.8s;
   transition: all 0.4s ease;
+  transition-delay: 1.8s;
 }
 @media screen and (width >= 769px) {
   .p-hero__catch {
